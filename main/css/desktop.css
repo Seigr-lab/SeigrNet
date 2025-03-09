@@ -1,0 +1,35 @@
+#desktop-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden; /* Prevents anything from being placed outside */
+    background-size: cover;
+}
+
+
+#desktop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    overflow: hidden; /* Ensures icons never exceed screen size */
+}
+
+.icon {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    z-index: 50; /* Prevents overlapping windows */
+}
+
+.icon img {
+    width: 80px;
+    height: 80px;
+}

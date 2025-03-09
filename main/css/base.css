@@ -6,10 +6,10 @@
     user-select: none;
 }
 
-/* ✅ Set GIF as Background */
+/* ✅ Set Background */
 body, html {
     background-color: black; /* Fallback */
-    background-image: url('/sonisk/media/SoniskSeigr.gif');
+    background-image: url('/main/media/SeigrBackground.png');
     background-size: cover; /* ✅ Ensure full coverage */
     background-position: center center;
     background-repeat: no-repeat;
@@ -30,21 +30,6 @@ body::before {
     background: rgba(0, 0, 0, 0.3); /* ✅ Smooth transparency */
     pointer-events: none;
     z-index: 0;
-}
-
-/* ✅ Logo Overlay (RESTORED) */
-#logo-overlay {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80vw; /* ✅ Ensures it's always visible */
-    height: auto;
-    background: url('/media/SoniskSeigrTextOverlay.png') center center no-repeat;
-    background-size: contain;
-    pointer-events: none; /* ✅ Ensures no interaction issues */
-    z-index: 1; /* ✅ Keeps it above the GIF background */
-    opacity: 0.5; /* ✅ Semi-transparent */
 }
 
 /* ✅ Desktop Container */
