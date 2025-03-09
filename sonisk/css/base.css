@@ -1,0 +1,57 @@
+/* ✅ Reset Defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+/* ✅ Set GIF as Background */
+body, html {
+    background-color: black; /* Fallback */
+    background-image: url('/media/SoniskSeigr.gif');
+    background-size: cover; /* ✅ Ensure full coverage */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* ✅ Apply a Semi-Transparent Overlay */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3); /* ✅ Smooth transparency */
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* ✅ Logo Overlay (RESTORED) */
+#logo-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw; /* ✅ Ensures it's always visible */
+    height: auto;
+    background: url('/media/SoniskSeigrTextOverlay.png') center center no-repeat;
+    background-size: contain;
+    pointer-events: none; /* ✅ Ensures no interaction issues */
+    z-index: 1; /* ✅ Keeps it above the GIF background */
+    opacity: 0.5; /* ✅ Semi-transparent */
+}
+
+/* ✅ Desktop Container */
+#desktop-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: transparent; /* ✅ Ensure nothing blocks the GIF */
+}
