@@ -9,7 +9,7 @@
 /* ✅ Set Background */
 body, html {
     background-color: black; /* Fallback */
-    background-image: url('/main/media/SeigrBackground.png');
+    background-image: url('/media/SeigrBackground.png');
     background-size: cover; /* ✅ Ensure full coverage */
     background-position: center center;
     background-repeat: no-repeat;
