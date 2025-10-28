@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+    .window {
+        max-width: 80vw;
+        max-height: 80vh;
+    }
+
+    .icon {
+        width: 60px;
+    }
+
+    .icon img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .icon span {
+        font-size: 12px;
+    }
+}
