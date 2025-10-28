@@ -1,0 +1,47 @@
+/* ✅ Markdown Container */
+.markdown-container {
+    padding: 10px;
+    background: black;
+    color: white;
+}
+
+/* ✅ Tables */
+.markdown-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border: 1px solid #ffffff;
+}
+
+.markdown-container th, .markdown-container td {
+    border: 1px solid #ffffff;
+    padding: 8px;
+    text-align: left;
+}
+
+.markdown-container th {
+    background-color: #333;
+    color: white;
+}
+
+/* ✅ Lists */
+.markdown-container ul, 
+.markdown-container ol {
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+.markdown-container li {
+    margin-bottom: 5px;
+}
+
+/* ✅ Links */
+.markdown-container a {
+    color: #8B0000; /* Blood Red */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.markdown-container a:hover {
+    text-decoration: underline;
+}

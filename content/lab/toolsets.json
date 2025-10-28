@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Seigr Toolset Crypto",
+        "slug": "seigr-toolset-crypto",
+        "short_html": "<p>A comprehensive cryptographic toolset for secure data operations and blockchain interactions.</p>",
+        "detail_path": "lab/toolsets/seigrtoolsetcrypto.html",
+        "thumbnail": "static/img/toolset-crypto.png",
+        "tags": ["crypto", "security", "self-sovereignty", "binary"]
+    },
+    {
+        "title": "Seigr Toolset DataBase",
+        "slug": "seigr-toolset-database",
+        "short_html": "<p>A high-performance binary database optimized for the Seigr Toolset applications.</p>",
+        "detail_path": "lab/toolsets/seigrtoolsetdatabase.html",
+        "thumbnail": "static/img/toolset-database.png",
+        "tags": ["database", "performance", "binary"]
+    }
+]
