@@ -6,13 +6,15 @@
 /* === TABLET VIEW (≤ 1024px) === */
 @media (max-width: 1024px) {
     main {
-        padding: 1.8rem;
-        margin: 2rem 1.5rem;
+        padding: 2rem;
     }
 
-    nav {
+    .container {
+        padding: 0;
+    }
+
+    nav .nav-inner {
         padding: 0.8rem 1rem;
-        justify-content: center;
         flex-wrap: wrap;
     }
 
@@ -25,6 +27,10 @@
         margin: 1rem 0;
         padding: 1.2rem;
     }
+
+    .content-box {
+        padding: 1.5rem;
+    }
 }
 
 /* === MOBILE VIEW (≤ 768px) === */
@@ -34,16 +40,29 @@
         line-height: 1.6;
     }
 
+    main {
+        padding: 1.5rem;
+    }
+
+    .container {
+        padding: 0;
+    }
+
     nav {
+        padding: 0.6rem 1rem;
+    }
+
+    nav .nav-inner {
         flex-direction: column;
         align-items: stretch;
-        padding: 0.6rem 1rem;
+        padding: 0;
+        gap: 0.5rem;
     }
 
     nav a {
         display: block;
         width: 100%;
-        margin: 0.3rem 0;
+        margin: 0;
         padding: 0.75rem;
         background: rgba(255, 255, 255, 0.04);
         border: 1px solid rgba(255, 255, 255, 0.06);
@@ -53,22 +72,19 @@
     }
 
     nav a:hover, nav a.active {
-        background-color: var(--accent-alt);
-        color: #fff;
+        background-color: rgba(30, 221, 137, 0.2);
+        color: #1edd89;
         transform: none;
-    }
-
-    main {
-        margin: 1.5rem;
-        padding: 1.2rem;
-        box-shadow: none;
-        border-radius: 10px;
     }
 
     .toolset-card, .roadmap-card {
         padding: 1rem;
         margin: 1rem 0;
         border-radius: 10px;
+    }
+
+    .content-box {
+        padding: 1.2rem;
     }
 
     h1 {
@@ -79,17 +95,47 @@
     h2 {
         font-size: 1.3rem;
     }
+
+    .breadcrumb {
+        margin-bottom: 1rem;
+    }
+
+    .breadcrumb a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    /* Manifesto mobile adjustments */
+    .manifesto h1 {
+        font-size: 1.8rem;
+    }
+
+    .manifesto-subtitle {
+        font-size: 1rem;
+    }
+
+    .manifesto p {
+        text-align: left;
+        hyphens: none;
+    }
 }
 
 /* === SMALL SCREEN / HANDHELD (≤ 480px) === */
 @media (max-width: 480px) {
     body {
         font-size: 14px;
-        background: radial-gradient(circle at center, #12151b, #090b0d);
+    }
+
+    main {
+        padding: 1rem;
     }
 
     nav {
         padding: 0.5rem;
+    }
+
+    nav .nav-inner {
+        gap: 0.4rem;
     }
 
     nav a {
@@ -97,25 +143,51 @@
         padding: 0.6rem;
     }
 
-    main {
-        padding: 1rem;
-        margin: 1rem;
-        background: rgba(20, 22, 26, 0.95);
-    }
-
     .toolset-card, .roadmap-card {
         padding: 0.8rem;
         font-size: 0.95rem;
+    }
+
+    .content-box {
+        padding: 1rem;
+    }
+
+    .breadcrumb a {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.85rem;
     }
 
     footer {
         padding: 1rem;
         font-size: 0.8rem;
     }
+
+    /* Manifesto small screen adjustments */
+    .manifesto h1 {
+        font-size: 1.5rem;
+    }
+
+    .manifesto-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .manifesto p {
+        margin-bottom: 1.2rem;
+    }
+
+    .manifesto-closing {
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+    }
 }
 
 /* === ULTRA SMALL SCREENS (≤ 360px) === */
 @media (max-width: 360px) {
+    main {
+        padding: 0.8rem;
+    }
+
     h1 {
         font-size: 1.3rem;
     }
@@ -124,12 +196,16 @@
         font-size: 1.1rem;
     }
 
+    nav .nav-inner {
+        gap: 0.3rem;
+    }
+
     nav a {
         font-size: 0.85rem;
         padding: 0.5rem;
     }
 
-    main {
+    .content-box {
         padding: 0.8rem;
     }
 }

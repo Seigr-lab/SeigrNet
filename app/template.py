@@ -31,9 +31,27 @@ class TemplateRenderer:
         """Render content template and inject into base.html."""
         if context is None:
             context = {}
-        content = self.render(content_template, context)
-        base_context = context.copy()
+        
+        # Provide safe defaults for common placeholders
+        from .config import SITE_TITLE, SITE_DESCRIPTION, SITE_URL
+        defaults = {
+            'title': SITE_TITLE,
+            'description': SITE_DESCRIPTION,
+            'canonical': SITE_URL,
+            'content': ''
+        }
+        
+        # Merge user context with defaults
+        full_context = defaults.copy()
+        full_context.update(context)
+        
+        # Render content template
+        content = self.render(content_template, full_context)
+        
+        # Prepare base context
+        base_context = full_context.copy()
         base_context['content'] = content
+        
         return self.render('base.html', base_context)
 
 # Global renderer instance
