@@ -4,7 +4,7 @@ import os
 
 # Site configuration
 SITE_TITLE = "Seigr.net"
-SITE_DESCRIPTION = "Seigr's public website"
+SITE_DESCRIPTION = "Technology in harmony with life - decentralized, secure, and self-sovereign systems"
 SITE_URL = "https://seigr.net"
 
 # Admin configuration

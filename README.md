@@ -56,9 +56,14 @@ seigr-net/
 
 ### Adding Content
 
+Content management is designed to be simple and doesn't require code changes. See **[CONTENT_GUIDE.md](CONTENT_GUIDE.md)** for comprehensive instructions.
+
+**Quick reference:**
+
 1. **Toolsets**: Update `content/lab/toolsets.json` and add HTML fragment in `content/lab/toolsets/`
 2. **Roadmap Items**: Update `content/roadmap/roadmap.json` and add detail in `content/roadmap/items/`
 3. **Pages**: Edit HTML files in `content/` for manifesto, beekeeping, music
+4. **Reload**: Use admin endpoint or restart server to apply changes
 
 ### Running Tests
 

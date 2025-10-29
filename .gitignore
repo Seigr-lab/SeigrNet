@@ -1,0 +1,7 @@
+# Ignore all pycache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore all .instructions.md files
+*.instructions.md

@@ -118,6 +118,86 @@ p {
     border-color: rgba(255, 0, 0, 0.25);
 }
 
+/* === Manifesto Specific Styling === */
+.manifesto {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.9;
+}
+
+.manifesto h1 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 2.2rem;
+}
+
+.manifesto-subtitle {
+    text-align: center;
+    color: #1edd89;
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+}
+
+.manifesto p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.manifesto strong {
+    color: #1edd89;
+}
+
+.manifesto-closing {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(30, 221, 137, 0.3);
+    text-align: center;
+}
+
+.manifesto-closing p {
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 2;
+}
+
+/* === Detail View & Breadcrumb === */
+.detail-view {
+    width: 100%;
+}
+
+.breadcrumb {
+    margin-bottom: 1.5rem;
+}
+
+.breadcrumb a {
+    display: inline-block;
+    color: #1edd89;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(30, 221, 137, 0.3);
+    border-radius: 8px;
+    transition: all 0.25s ease;
+}
+
+.breadcrumb a:hover {
+    background: rgba(30, 221, 137, 0.1);
+    border-color: #1edd89;
+    color: #fff;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background: rgba(30, 221, 137, 0.15);
+    border: 1px solid rgba(30, 221, 137, 0.3);
+    border-radius: 6px;
+    color: #1edd89;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
 /* === Cards === */
 .toolset-card, .roadmap-card {
     border: 1px solid rgba(255, 0, 0, 0.15);
@@ -131,6 +211,31 @@ p {
 .toolset-card:hover, .roadmap-card:hover {
     transform: translateY(-2px);
     border-color: #b31010;
+}
+
+.toolset-card h2, .roadmap-card h2 {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+}
+
+.toolset-card p, .roadmap-card p {
+    margin-bottom: 0.8rem;
+}
+
+.toolset-card a, .roadmap-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.4rem 1rem;
+    background: rgba(30, 221, 137, 0.1);
+    border: 1px solid rgba(30, 221, 137, 0.3);
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.toolset-card a:hover, .roadmap-card a:hover {
+    background: rgba(30, 221, 137, 0.2);
+    border-color: #1edd89;
 }
 
 /* === Links === */
@@ -162,13 +267,9 @@ footer a:hover {
 
 /* === Responsive === */
 @media (max-width: 768px) {
-    .container {
-        padding: 10px 50px 20px;
-    }
-
     nav .nav-inner {
         flex-wrap: wrap;
-        gap: 10px 20px;
+        gap: 0.5rem;
     }
 
     h1 {

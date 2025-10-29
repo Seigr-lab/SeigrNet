@@ -44,9 +44,10 @@ def handle_roadmap_detail(environ, start_response, content_cache, slug):
     context = {
         'title': item['title'],
         'content_html': content_html,
+        'status': item.get('status', 'unknown'),
         'metadata': item
     }
-    html = renderer.render_base('roadmap_card.html', context)
+    html = renderer.render_base('roadmap_detail.html', context)
     headers = [('Content-Type', 'text/html; charset=utf-8')]
     set_cache_headers(headers, DYNAMIC_CACHE_MAX_AGE)
     start_response('200 OK', headers)
