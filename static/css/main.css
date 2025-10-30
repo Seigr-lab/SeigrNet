@@ -1,6 +1,5 @@
 /* =====================================================
-   Seigr.net Minimal Design — Black / Red / Green
-   Subtle depth, fixed layout rhythm, zero jump.
+   Seigr.net Minimal Design
    ===================================================== */
 
 /* === Reset === */
@@ -13,7 +12,7 @@
 html, body {
     height: 100%;
     font-family: "Inter", "Segoe UI", sans-serif;
-    background: #0c0c0c;
+    background: #000000;
     color: #e4e4e4;
     line-height: 1.7;
 }
@@ -41,8 +40,7 @@ main {
 /* === Navigation === */
 nav {
     padding: 10px 50px 20px;
-    background: rgba(15, 15, 15, 0.98);
-    border-bottom: 1px solid rgb(255, 0, 0);
+    background: rgb(0, 0, 0);
     backdrop-filter: blur(6px);
     box-shadow: 0 0 8px rgba(255, 0, 0, 0.08);
 }
@@ -67,7 +65,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #1edd89;
+    color: #ff0000a2;
 
 }
 
@@ -84,38 +82,30 @@ h1, h2 {
 }
 
 h1 {
-    color: #d61818;
+    color: #ff3b3b;
     font-size: 2rem;
 }
 
 h2 {
-    color: #1edd89;
+    color: #ff0000;
     font-size: 1.5rem;
 }
 
 h3 {
-    color: #dd1e1e54;
+    color: #351919;
     font-size: 1rem;
 }
 
 p {
     margin-bottom: 1rem;
-    color: #ccc;
+    color: #000000;
 }
 
 /* === Content === */
 .content-box {
-    background: linear-gradient(145deg, #111 0%, #0b0b0b 100%);
-    border: 1px solid rgba(255, 0, 0, 0.1);
-    border-radius: 14px;
+    background: #ff8800;
+    border-radius: 30px;
     padding: 2rem;
-    box-shadow: inset 0 0 20px rgba(255, 0, 0, 0.05);
-    transition: box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
-.content-box:hover {
-    box-shadow: inset 0 0 25px rgba(255, 0, 0, 0.12);
-    border-color: rgba(255, 0, 0, 0.25);
 }
 
 /* === Manifesto Specific Styling === */
@@ -133,7 +123,7 @@ p {
 
 .manifesto-subtitle {
     text-align: center;
-    color: #1edd89;
+    color: #aa0000;
     font-size: 1.1rem;
     margin-bottom: 2.5rem;
 }
@@ -145,13 +135,13 @@ p {
 }
 
 .manifesto strong {
-    color: #1edd89;
+    color: #910000;
 }
 
 .manifesto-closing {
     margin-top: 3rem;
     padding-top: 2rem;
-    border-top: 1px solid rgba(30, 221, 137, 0.3);
+    border-top: 1px solid rgb(255, 0, 0);
     text-align: center;
 }
 
@@ -172,11 +162,11 @@ p {
 
 .breadcrumb a {
     display: inline-block;
-    color: #1edd89;
+    color: #ff0000;
     text-decoration: none;
     font-weight: 500;
     padding: 0.5rem 1rem;
-    border: 1px solid rgba(30, 221, 137, 0.3);
+    border: 1px solid rgb(255, 0, 0);
     border-radius: 8px;
     transition: all 0.25s ease;
 }
