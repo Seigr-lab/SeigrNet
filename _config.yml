@@ -1,0 +1,65 @@
+# GitHub Pages Configuration
+# This file tells GitHub Pages to serve from the /docs directory
+
+# Theme: None (we use custom HTML/CSS)
+theme: null
+
+# Base URL for the site
+baseurl: "/SeigrNet"
+
+# Site title and description
+title: "Seigr.net"
+description: "Technology in Harmony with Life - Decentralized, secure, and self-sovereign systems"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Exclude files from processing
+exclude:
+  - app/
+  - content/
+  - templates/
+  - static/
+  - tests/
+  - scripts/
+  - serve.py
+  - README.md
+  - CONTENT_GUIDE.md
+  - .gitignore
+
+# Include the docs directory
+include:
+  - docs/
+
+# Collections (none needed for simple static site)
+collections: null
+
+# Plugins (GitHub Pages safe plugins only)
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Site settings
+lang: en
+author: "Seigr Lab"
+email: "contact@seigr.net"
+
+# Social links
+github_username: Seigr-lab
+repository: Seigr-lab/SeigrNet
+
+# SEO settings
+logo: /assets/seigr-logo.png
+social:
+  type: Organization
+  name: Seigr Lab
+  links:
+    - https://github.com/Seigr-lab
+
+# Default layout settings
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
