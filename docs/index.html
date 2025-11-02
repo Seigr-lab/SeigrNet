@@ -339,6 +339,12 @@
             font-style: italic;
             margin: 2rem 0;
         }
+        
+        /* Ensure main content is always visible */
+        .header, .section, .footer {
+            position: relative;
+            z-index: 1;
+        }
     </style>
 </head>
 <body>
@@ -423,7 +429,11 @@
                 if (!response.ok) throw new Error('Failed to fetch repositories');
                 
                 const repos = await response.json();
-                const publicRepos = repos.filter(repo => !repo.private);
+                const publicRepos = repos.filter(repo => 
+                    !repo.private && 
+                    repo.name !== 'SeigrNet' && // Exclude this website repo
+                    repo.name.toLowerCase() !== 'seigrnet' // Case insensitive
+                );
                 
                 // Sort by stars and recent activity
                 publicRepos.sort((a, b) => {
@@ -591,7 +601,16 @@
         }
 
         // Load repositories when page loads
-        document.addEventListener('DOMContentLoaded', loadRepositories);
+        document.addEventListener('DOMContentLoaded', function() {
+            // Ensure no README modals are open initially
+            document.body.classList.remove('readme-open');
+            document.querySelectorAll('.repo-readme').forEach(el => {
+                el.style.display = 'none';
+            });
+            
+            // Load repositories
+            loadRepositories();
+        });
     </script>
 </body>
 </html>
