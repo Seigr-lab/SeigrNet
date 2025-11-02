@@ -37,6 +37,239 @@ main {
     max-width: 960px;
 }
 
+/* === Repository Content === */
+.repo-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #333;
+}
+
+.repo-header h2 {
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.repo-info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.repo-link {
+    color: #ff3333;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #ff3333;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.repo-link:hover {
+    background: #ff3333;
+    color: #000;
+}
+
+.repo-updated {
+    font-style: italic;
+    color: #666;
+}
+
+.repo-content {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 8px;
+    padding: 2rem;
+    border: 1px solid #333;
+}
+
+/* === Repository Display === */
+.repo-display .repo-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.repo-description {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 1.5rem;
+}
+
+.repo-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.repo-stats {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.stat {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.repo-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.repo-link.primary {
+    background: #ff3333;
+    color: #000;
+    border: none;
+}
+
+.repo-topics {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.topic-tag {
+    background: rgba(255, 51, 51, 0.1);
+    color: #ff6666;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    border: 1px solid rgba(255, 51, 51, 0.3);
+}
+
+.topic-tag.small {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #333;
+}
+
+.live-indicator {
+    font-size: 0.8rem;
+    color: #66ff66;
+    background: rgba(102, 255, 102, 0.1);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    border: 1px solid rgba(102, 255, 102, 0.3);
+}
+
+.readme-content {
+    line-height: 1.8;
+}
+
+/* === Repository Grid === */
+.repos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.repo-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.repo-card:hover {
+    border-color: #ff3333;
+    background: rgba(255, 51, 51, 0.05);
+}
+
+.repo-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.repo-card-header h3 {
+    margin: 0;
+}
+
+.repo-card-header h3 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.repo-card-header h3 a:hover {
+    color: #ff3333;
+}
+
+.repo-card-stats {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.repo-card-description {
+    color: #ccc;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.repo-card-topics {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+}
+
+.repo-card-actions {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+}
+
+.view-docs, .view-github {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.view-docs {
+    background: #ff3333;
+    color: #000;
+    border: none;
+}
+
+.view-docs:hover {
+    background: #ff5555;
+}
+
+.view-github {
+    color: #ff3333;
+    border: 1px solid #ff3333;
+}
+
+.view-github:hover {
+    background: #ff3333;
+    color: #000;
+}
+
+.repo-count {
+    color: #999;
+    font-style: italic;
+}
+
 /* === Navigation === */
 nav {
     padding: 10px 50px 20px;

@@ -20,6 +20,7 @@ def setup_routes():
     from .handlers.roadmap import handle_roadmap
     from .handlers.beekeeping import handle_beekeeping
     from .handlers.music import handle_music
+    from .handlers.repos import handle_seigr_repos, handle_repo
 
     routes.update({
         '/': handle_landing,
@@ -29,6 +30,7 @@ def setup_routes():
         '/beekeeping': handle_beekeeping,
         '/music': handle_music,
         '/api/toolsets': handle_toolsets_api,
+        '/repos': handle_seigr_repos,
     })
 
 setup_routes()
