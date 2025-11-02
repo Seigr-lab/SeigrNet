@@ -1,0 +1,47 @@
+<!-- All Seigr Repositories Template -->
+<div class="repos-list">
+    <div class="page-header">
+        <h1>Seigr Repositories</h1>
+        <p>Explore all public repositories from the Seigr Lab organization</p>
+        <p class="repo-count">{{ total_repos }} public repositories</p>
+    </div>
+
+    <div class="repos-grid">
+        {% for repo in repos %}
+        <div class="repo-card">
+            <div class="repo-card-header">
+                <h3><a href="/repos/{{ repo.name }}">{{ repo.name }}</a></h3>
+                <div class="repo-card-stats">
+                    <span>⭐ {{ repo.stars }}</span>
+                    <span>{{ repo.language or 'Unknown' }}</span>
+                </div>
+            </div>
+            
+            <p class="repo-card-description">{{ repo.description }}</p>
+            
+            {% if repo.topics %}
+            <div class="repo-card-topics">
+                {% for topic in repo.topics[:3] %}
+                <span class="topic-tag small">{{ topic }}</span>
+                {% endfor %}
+                {% if repo.topics|length > 3 %}
+                <span class="topic-tag small">+{{ repo.topics|length - 3 }} more</span>
+                {% endif %}
+            </div>
+            {% endif %}
+            
+            <div class="repo-card-actions">
+                <a href="/repos/{{ repo.name }}" class="view-docs">View Documentation</a>
+                <a href="{{ repo.url }}" target="_blank" class="view-github">GitHub →</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    {% if not repos %}
+    <div class="no-repos">
+        <p>No public repositories found, or unable to fetch repository data.</p>
+        <p><a href="https://github.com/Seigr-lab" target="_blank">Visit Seigr Lab on GitHub</a></p>
+    </div>
+    {% endif %}
+</div>

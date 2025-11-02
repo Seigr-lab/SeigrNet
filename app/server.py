@@ -76,6 +76,13 @@ def create_app():
             from .handlers.roadmap import handle_roadmap_detail
             return handle_roadmap_detail(environ, start_response, content_cache, slug)
         
+        # Handle repository routes
+        if path.startswith('/repos/'):
+            repo_path = path[len('/repos/'):]
+            if repo_path and not repo_path.endswith('/'):
+                from .handlers.repos import handle_repo
+                return handle_repo(environ, start_response, content_cache, 'Seigr-lab', repo_path)
+        
         # Admin reload
         if path == '/admin/reload' and method == 'POST':
             from .config import ADMIN_TOKEN

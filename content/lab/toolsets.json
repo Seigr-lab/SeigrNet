@@ -5,7 +5,9 @@
         "short_html": "<p>A comprehensive cryptographic toolset for secure data operations and blockchain interactions.</p>",
         "detail_path": "lab/toolsets/seigrtoolsetcrypto.html",
         "thumbnail": "static/img/toolset-crypto.png",
-        "tags": ["crypto", "security", "self-sovereignty", "binary"]
+        "tags": ["crypto", "security", "self-sovereignty", "binary"],
+        "github_repo": "Seigr-lab/SeigrToolsetCrypto",
+        "github_branch": "main"
     },
     {
         "title": "Seigr Toolset DataBase",
@@ -13,6 +15,8 @@
         "short_html": "<p>A high-performance binary database optimized for the Seigr Toolset applications.</p>",
         "detail_path": "lab/toolsets/seigrtoolsetdatabase.html",
         "thumbnail": "static/img/toolset-database.png",
-        "tags": ["database", "performance", "binary"]
+        "tags": ["database", "performance", "binary"],
+        "github_repo": "Seigr-lab/SeigrToolsetDatabase",
+        "github_branch": "main"
     }
 ]

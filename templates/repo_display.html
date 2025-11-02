@@ -1,0 +1,59 @@
+<!-- Repository Display Template -->
+<div class="breadcrumb">
+    <a href="/lab">← Back to Seigr Lab</a>
+</div>
+
+<div class="repo-display">
+    <div class="repo-header">
+        <h1>{{ repo_info.name }}</h1>
+        <p class="repo-description">{{ repo_info.description }}</p>
+        
+        <div class="repo-meta">
+            <div class="repo-stats">
+                <span class="stat">
+                    <strong>{{ repo_info.stars }}</strong> stars
+                </span>
+                <span class="stat">
+                    <strong>{{ repo_info.forks }}</strong> forks
+                </span>
+                <span class="stat">
+                    <strong>{{ repo_info.language }}</strong>
+                </span>
+                <span class="stat">
+                    <strong>{{ repo_info.license }}</strong>
+                </span>
+            </div>
+            
+            <div class="repo-actions">
+                <a href="{{ repo_url }}" target="_blank" class="repo-link primary">
+                    📦 View on GitHub
+                </a>
+                <a href="{{ repo_url }}/issues" target="_blank" class="repo-link">
+                    🐛 Issues
+                </a>
+                <a href="{{ repo_url }}/pulls" target="_blank" class="repo-link">
+                    🔀 Pull Requests
+                </a>
+            </div>
+        </div>
+
+        {% if repo_info.topics %}
+        <div class="repo-topics">
+            {% for topic in repo_info.topics %}
+            <span class="topic-tag">{{ topic }}</span>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="repo-content">
+        <div class="content-header">
+            <h2>Documentation</h2>
+            <span class="live-indicator">🔄 Live from GitHub</span>
+        </div>
+        
+        <div class="readme-content">
+            {{ readme_html|safe }}
+        </div>
+    </div>
+</div>
