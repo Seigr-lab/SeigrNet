@@ -1,11 +1,11 @@
 /* Navigation */
 nav {
-    text-align: right;
+    text-align: start;
 }
 
 .nav a {
     margin: 0 1rem;
-    padding: 0.5rem 1rem;
+    padding: 10px 10px 10px 0;
     text-decoration: none;
     color: #333;
     transition: all 0.3s ease;
@@ -19,7 +19,7 @@ nav {
 /* Active navigation state */
 .nav-active {
     margin: 0 1rem;
-    padding: 0.5rem 1rem;
+    padding: 10px 10px 10px 0;
     color: rgb(255, 0, 0);
     cursor: default;
     pointer-events: none;
