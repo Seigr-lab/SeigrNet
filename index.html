@@ -39,9 +39,15 @@
         }
         .cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
             margin: 2rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
         }
         .card {
             background: white;
@@ -169,23 +175,6 @@
             border-top: 1px solid #eee;
             padding-top: 1rem;
             margin-top: 1rem;
-            position: relative;
-        }
-        
-        /* Full-width README display */
-        body.readme-open .repo-readme[style*="block"] {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: white;
-            z-index: 1000;
-            padding: 2rem;
-            overflow-y: auto;
-            border: none;
-            margin: 0;
-            box-shadow: 0 0 20px rgba(0,0,0,0.3);
         }
         
         .readme-header {
@@ -203,12 +192,6 @@
             font-size: 1.2rem;
         }
         
-        .readme-controls {
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-        }
-        
         .live-indicator {
             font-size: 0.7rem;
             color: #28a745;
@@ -218,39 +201,15 @@
             border: 1px solid #c3e6cb;
         }
         
-        .close-readme {
-            background: #dc3545;
-            color: white;
-            border: none;
-            padding: 0.3rem 0.6rem;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 0.8rem;
-        }
-        
-        .close-readme:hover {
-            background: #c82333;
-        }
-        
         .readme-content {
             background: #f8f9fa;
-            padding: 2rem;
+            padding: 1.5rem;
             border-radius: 4px;
             border: 1px solid #e9ecef;
-            font-size: 1rem;
-            line-height: 1.7;
-            max-width: none;
-        }
-        
-        /* Full-width README content styling */
-        body.readme-open .readme-content {
-            background: white;
-            border: none;
-            padding: 0;
-            font-size: 1.1rem;
-            line-height: 1.8;
-            max-width: 900px;
-            margin: 0 auto;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            max-height: 400px;
+            overflow-y: auto;
         }
         
         .readme-content h1, .readme-content h2, .readme-content h3 {
@@ -509,21 +468,11 @@
             // Toggle visibility
             if (isVisible) {
                 readmeContainer.style.display = 'none';
-                document.body.classList.remove('readme-open');
                 return;
             }
             
-            // Close any other open READMEs
-            document.querySelectorAll('.repo-readme').forEach(el => {
-                el.style.display = 'none';
-            });
-            
             readmeContainer.style.display = 'block';
             readmeContainer.innerHTML = '<div class="readme-loading">🔄 Loading documentation...</div>';
-            document.body.classList.add('readme-open');
-            
-            // Scroll to the README
-            readmeContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
             
             try {
                 // Try main branch first, then master as fallback
@@ -545,10 +494,7 @@
                 readmeContainer.innerHTML = `
                     <div class="readme-header">
                         <h4>📋 Documentation</h4>
-                        <div class="readme-controls">
-                            <span class="live-indicator">Live from GitHub</span>
-                            <button onclick="loadRepoReadme('${repoName}')" class="close-readme">✕ Close</button>
-                        </div>
+                        <span class="live-indicator">Live from GitHub</span>
                     </div>
                     <div class="readme-content">${html}</div>
                 `;
@@ -557,9 +503,6 @@
                 readmeContainer.innerHTML = `
                     <div class="readme-header">
                         <h4>📋 Documentation</h4>
-                        <div class="readme-controls">
-                            <button onclick="loadRepoReadme('${repoName}')" class="close-readme">✕ Close</button>
-                        </div>
                     </div>
                     <div class="readme-error">
                         <p>📝 No README found or unable to load documentation.</p>
@@ -601,16 +544,7 @@
         }
 
         // Load repositories when page loads
-        document.addEventListener('DOMContentLoaded', function() {
-            // Ensure no README modals are open initially
-            document.body.classList.remove('readme-open');
-            document.querySelectorAll('.repo-readme').forEach(el => {
-                el.style.display = 'none';
-            });
-            
-            // Load repositories
-            loadRepositories();
-        });
+        document.addEventListener('DOMContentLoaded', loadRepositories);
     </script>
 </body>
 </html>
