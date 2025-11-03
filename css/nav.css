@@ -1,7 +1,6 @@
 /* Navigation */
 nav {
-    text-align: left;
-    margin: 5% 0;
+    text-align: right;
 }
 
 .nav a {
@@ -14,6 +13,14 @@ nav {
 
 .nav a:hover {
     color: rgb(255, 0, 0);
-    
     text-decoration: none;
+}
+
+/* Active navigation state */
+.nav-active {
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    color: rgb(255, 0, 0);
+    cursor: default;
+    pointer-events: none;
 }
