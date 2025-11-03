@@ -1,0 +1,318 @@
+/* Seigr.net Static Website Styles */
+
+.page-header {
+    text-align: right;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+}
+.page-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+}
+
+.header {
+    text-align: left;
+    margin-bottom: 2rem;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.section {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+    color: #666;
+}
+
+/* Repository-specific styling */
+.repo-card {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.repo-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.repo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.repo-header h3 {
+    margin: 0;
+    color: #333;
+}
+
+.repo-header h3 a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+.repo-header h3 a:hover {
+    text-decoration: underline;
+}
+
+.repo-stats {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.repo-description {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.repo-topics {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.topic-tag {
+    background: #f1f8ff;
+    color: #0366d6;
+    padding: 0.2rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    border: 1px solid #c8e1ff;
+}
+
+.repo-actions {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.view-docs, .view-github {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.view-docs {
+    background: #0366d6;
+    color: white;
+    border: none;
+}
+
+.view-docs:hover {
+    background: #0256cc;
+}
+
+.view-github {
+    color: #0366d6;
+    border: 1px solid #0366d6;
+    background: white;
+}
+
+.view-github:hover {
+    background: #0366d6;
+    color: white;
+}
+
+.repo-readme {
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+.readme-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.readme-header h4 {
+    margin: 0;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.live-indicator {
+    font-size: 0.7rem;
+    color: #28a745;
+    background: #f0fff4;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #c3e6cb;
+}
+
+.readme-content {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 4px;
+    border: 1px solid #e9ecef;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.readme-content h1, .readme-content h2, .readme-content h3 {
+    color: #333;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.readme-content h1:first-child,
+.readme-content h2:first-child,
+.readme-content h3:first-child {
+    margin-top: 0;
+}
+
+.readme-content h1 {
+    font-size: 2rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.readme-content h2 {
+    font-size: 1.5rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.3rem;
+}
+
+.readme-content h3 {
+    font-size: 1.2rem;
+}
+
+.readme-content p {
+    margin-bottom: 1rem;
+}
+
+.readme-content pre {
+    background: #f6f8fa;
+    padding: 1.5rem;
+    border-radius: 6px;
+    border: 1px solid #e1e4e8;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    font-family: 'Monaco', 'Menlo', monospace;
+}
+
+.readme-content code {
+    background: #f6f8fa;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.9em;
+    font-family: 'Monaco', 'Menlo', monospace;
+}
+
+.readme-content pre code {
+    background: none;
+    padding: 0;
+}
+
+.readme-content a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+.readme-content a:hover {
+    text-decoration: underline;
+}
+
+.readme-content ul, .readme-content ol {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+.readme-content li {
+    margin: 0.5rem 0;
+}
+
+.readme-loading, .readme-error {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+    font-style: italic;
+}
+
+#repos-loading {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    margin: 2rem 0;
+}
+
