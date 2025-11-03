@@ -30,7 +30,7 @@ function createHeader() {
     const navLinks = [
         { href: `${basePath}index.html`, text: 'Seigr Lab' },
         { href: `${basePath}html/beekeeping.html`, text: 'Beekeeping' },
-        { href: `${basePath}html/music.html`, text: 'Music' },
+        { href: `${basePath}html/sound.html`, text: 'Sound' },
         { href: `${basePath}html/manifesto.html`, text: 'Manifesto' }
     ];
     
