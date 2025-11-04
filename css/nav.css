@@ -24,3 +24,39 @@ nav {
     cursor: default;
     pointer-events: none;
 }
+
+/* Mobile responsive navigation */
+@media (max-width: 768px) {
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .nav a,
+    .nav-active {
+        margin: 0.25rem 0.5rem 0.25rem 0;
+        padding: 8px 12px;
+        font-size: 0.9rem;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+    
+    .nav a,
+    .nav-active {
+        margin: 0.2rem 0;
+        padding: 6px 8px;
+        font-size: 0.9rem;
+        display: block;
+        width: fit-content;
+    }
+}
