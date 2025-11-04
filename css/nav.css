@@ -25,38 +25,53 @@ nav {
     pointer-events: none;
 }
 
-/* Mobile responsive navigation */
-@media (max-width: 768px) {
+/* Mobile responsive navigation - ultra compact horizontal */
+@media (max-width: 600px) {
     .nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        gap: 0.5rem;
-    }
-    
-    .nav a,
-    .nav-active {
-        margin: 0.25rem 0.5rem 0.25rem 0;
-        padding: 8px 12px;
-        font-size: 0.9rem;
+        display: flex !important;
+        flex-direction: row !important;
+        overflow-x: auto;
+        overflow-y: hidden;
         white-space: nowrap;
-    }
-}
-
-@media (max-width: 480px) {
-    .nav {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.25rem;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        padding: 2px 0 !important;
+        margin: 5px 0 !important;
+        gap: 8px;
     }
     
     .nav a,
     .nav-active {
-        margin: 0.2rem 0;
-        padding: 6px 8px;
-        font-size: 0.9rem;
-        display: block;
-        width: fit-content;
+        margin: 0 !important;
+        padding: 4px 8px !important;
+        font-size: 0.8rem !important;
+        white-space: nowrap;
+        flex-shrink: 0;
+        border-radius: 8px;
+        background: rgba(0, 0, 0, 0.06);
+        display: inline-block;
+        line-height: 1.2;
+    }
+    
+    .nav-active {
+        background: rgba(255, 0, 0, 0.12) !important;
+        font-weight: bold;
+        color: rgb(255, 0, 0) !important;
+    }
+    
+    .nav a:hover {
+        background: rgba(255, 0, 0, 0.08);
+    }
+    
+    /* Hide scrollbar completely */
+    .nav::-webkit-scrollbar {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+    
+    .nav {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
 }
