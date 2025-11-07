@@ -38,15 +38,24 @@ function createHeader() {
         const active = isActive(link.href);
         return active 
             ? `<span class="nav-active">${link.text}</span>`
-            : `<a href="${link.href}">${link.text}</a>`;
+            : `<a href="${link.href}" onclick="closeMobileMenu()">${link.text}</a>`;
     }).join('');
     
     const headerHTML = `
         <div class="page-header">
-            <p>Seigr</p>
-            <p class="page-subtitle">a continuum of code, sound, and nature</p>
+            <div class="header-top">
+                <div class="header-title-section">
+                    <p>Seigr</p>
+                    <p class="page-subtitle">a continuum of code, sound, and nature</p>
+                </div>
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
             
-            <nav class="nav">
+            <nav class="nav" id="main-nav">
                 ${navHTML}
             </nav>
         </div>
@@ -54,6 +63,49 @@ function createHeader() {
     
     return headerHTML;
 }
+
+// Toggle mobile menu
+function toggleMobileMenu() {
+    const nav = document.getElementById('main-nav');
+    const toggle = document.querySelector('.mobile-menu-toggle');
+    
+    if (nav && toggle) {
+        const isOpen = nav.classList.contains('mobile-nav-open');
+        
+        if (isOpen) {
+            nav.classList.remove('mobile-nav-open');
+            toggle.classList.remove('menu-open');
+        } else {
+            nav.classList.add('mobile-nav-open');
+            toggle.classList.add('menu-open');
+        }
+    }
+}
+
+// Close mobile menu
+function closeMobileMenu() {
+    const nav = document.getElementById('main-nav');
+    const toggle = document.querySelector('.mobile-menu-toggle');
+    
+    if (nav && toggle) {
+        nav.classList.remove('mobile-nav-open');
+        toggle.classList.remove('menu-open');
+    }
+}
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', function(event) {
+    const nav = document.getElementById('main-nav');
+    const toggle = document.querySelector('.mobile-menu-toggle');
+    
+    if (nav && toggle && nav.classList.contains('mobile-nav-open')) {
+        // Check if click is outside nav and toggle button
+        if (!nav.contains(event.target) && !toggle.contains(event.target)) {
+            nav.classList.remove('mobile-nav-open');
+            toggle.classList.remove('menu-open');
+        }
+    }
+});
 
 // Function to inject header into page
 function loadHeader() {
