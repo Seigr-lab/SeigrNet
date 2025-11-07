@@ -1,0 +1,264 @@
+/* Support/Donation Modal Styles */
+
+.support-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.support-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+}
+
+.support-modal-content {
+    position: relative;
+    background: white;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    z-index: 10000;
+}
+
+.support-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.support-modal-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.support-modal-close {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #999;
+    cursor: pointer;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    transition: color 0.2s;
+}
+
+.support-modal-close:hover {
+    color: rgb(255, 0, 0);
+}
+
+.support-modal-body {
+    padding: 1.5rem;
+}
+
+.support-intro {
+    text-align: center;
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.payment-option:hover {
+    border-color: rgb(255, 0, 0);
+    background: rgba(255, 0, 0, 0.02);
+    transform: translateX(5px);
+}
+
+.payment-icon {
+    font-size: 2rem;
+    min-width: 50px;
+    text-align: center;
+}
+
+.payment-details {
+    flex: 1;
+}
+
+.payment-name {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+
+.payment-description {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.payment-action {
+    font-size: 1.5rem;
+    color: #999;
+    transition: color 0.3s;
+}
+
+.payment-option:hover .payment-action {
+    color: rgb(255, 0, 0);
+}
+
+.crypto-address {
+    margin: -0.5rem 0 0.75rem 0;
+    padding: 1rem;
+    background: #f8f8f8;
+    border-radius: 8px;
+    border: 2px solid #eee;
+}
+
+.crypto-address input {
+    width: 100%;
+    padding: 0.75rem;
+    font-family: monospace;
+    font-size: 0.85rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+    margin-bottom: 0.75rem;
+}
+
+.copy-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.copy-btn:hover {
+    background: rgb(220, 0, 0);
+}
+
+.copied-notification {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    animation: fadeInOut 2s;
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+     10%, 90% { opacity: 1; }
+}
+
+.support-footer {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+.support-footer p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Support Button Styles */
+.support-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 25px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 9998;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.support-button:hover {
+    background: rgb(220, 0, 0);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(255, 0, 0, 0.4);
+}
+
+.support-button-icon {
+    font-size: 1.2rem;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .support-modal-content {
+        width: 95%;
+        max-height: 95vh;
+    }
+    
+    .support-modal-header {
+        padding: 1rem;
+    }
+    
+    .support-modal-body {
+        padding: 1rem;
+    }
+    
+    .payment-option {
+        padding: 0.75rem;
+    }
+    
+    .payment-icon {
+        font-size: 1.5rem;
+        min-width: 40px;
+    }
+    
+    .payment-name {
+        font-size: 0.9rem;
+    }
+    
+    .payment-description {
+        font-size: 0.8rem;
+    }
+    
+    .support-button {
+        bottom: 15px;
+        right: 15px;
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+}
