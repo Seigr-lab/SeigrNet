@@ -8,19 +8,27 @@ const PROJECTS_DATA = {
         shortDescription: 'Post-classical cryptographic engine with entropy-regenerative architecture',
         description: 'STC v0.3.1 is a cryptographic system implementing post-classical techniques. It uses lattice-based entropy, multi-path hashing, and automated profile selection. New in v0.3.1: Automated Security Profiles - File Type Detection detects file types using extensions and binary signatures, 19 Predefined Profiles provide different parameter sets for documents, media, credentials, etc. Content Analysis uses pattern matching for keywords and file structure analysis. Profile Selection automatically selects parameters based on detected file type. Command-Line Interface provides CLI tool for file encryption/decryption. Core Cryptographic Components include Continuous Entropy Lattice (CEL) for lattice-based entropy generation with quality metrics, Probabilistic Hashing Engine (PHE) for multi-path hashing with configurable path count, Contextual Key Emergence (CKE) for key derivation from lattice state intersections, Data-State Folding (DSF) for data transformation using tensor operations, Polymorphic Cryptographic Flow (PCF) for parameter modification based on entropy state, Decoy System for variable-count fake data vectors for obfuscation, and State Persistence for serialization of cryptographic state to binary format.',
         language: 'Python',
-        stars: 0,
         topics: ['alpha', 'cryptographic-algorithms', 'cryptography'],
         github_url: 'https://github.com/Seigr-lab/SeigrToolsetCrypto',
 
     },
-    
+
+    'seigr-toolset-transmissions': {
+        name: 'seigr-toolset-transmissions',
+        displayName: 'Seigr Toolset Transmissions',
+        shortDescription: 'Binary, encrypted, application-agnostic transmission protocol.',
+        description: 'A P2P streaming protocol that uses Seigr Toolset Crypto (STC) for all cryptographic operations. Because STC is probabilistic (not deterministic like SHA-256), traditional handshake protocols do not work. This implements a handshake using STC encrypt/decrypt for mutual authentication.',
+        language: 'Python',
+        topics: ['alpha', 'streaming', 'cryptography'],
+        github_url: 'https://github.com/Seigr-lab/SeigrToolsetTransmissions'
+    },
+
     'seigr-toolset-database': {
         name: 'seigr-toolset-database',
         displayName: 'Seigr Toolset Database',
         shortDescription: 'High-performance 4D spatiotemporal database with GPU acceleration',
         description: 'High-performance 4D spatiotemporal database with GPU acceleration, binary TLV protocol, and web-based management interface for distributed Seigr network operations',
         language: 'Python',
-        stars: 0,
         topics: ['alpha', 'database', '4d-spatial', 'gpu-acceleration', 'binary-protocol', 'web-interface', 'distributed-systems', 'cuda'],
         github_url: 'https://github.com/Seigr-lab/SeigrToolsetDatabase'
     }
