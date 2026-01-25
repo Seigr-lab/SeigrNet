@@ -6,7 +6,7 @@ const PROJECTS_DATA = {
         name: 'seigr-toolset-crypto',
         displayName: 'Seigr Toolset Crypto',
         shortDescription: 'Post-classical cryptographic engine with entropy-regenerative architecture',
-        description: 'STC v0.3.1 is a cryptographic system implementing post-classical techniques. It uses lattice-based entropy, multi-path hashing, and automated profile selection. New in v0.3.1: Automated Security Profiles - File Type Detection detects file types using extensions and binary signatures, 19 Predefined Profiles provide different parameter sets for documents, media, credentials, etc. Content Analysis uses pattern matching for keywords and file structure analysis. Profile Selection automatically selects parameters based on detected file type. Command-Line Interface provides CLI tool for file encryption/decryption. Core Cryptographic Components include Continuous Entropy Lattice (CEL) for lattice-based entropy generation with quality metrics, Probabilistic Hashing Engine (PHE) for multi-path hashing with configurable path count, Contextual Key Emergence (CKE) for key derivation from lattice state intersections, Data-State Folding (DSF) for data transformation using tensor operations, Polymorphic Cryptographic Flow (PCF) for parameter modification based on entropy state, Decoy System for variable-count fake data vectors for obfuscation, and State Persistence for serialization of cryptographic state to binary format.',
+        description: 'STC v0.4.3 is a cryptographic system implementing post-classical techniques. It uses lattice-based entropy, multi-path hashing, and automated profile selection. New in v0.3.1: Automated Security Profiles - File Type Detection detects file types using extensions and binary signatures, 19 Predefined Profiles provide different parameter sets for documents, media, credentials, etc. Content Analysis uses pattern matching for keywords and file structure analysis. Profile Selection automatically selects parameters based on detected file type. Command-Line Interface provides CLI tool for file encryption/decryption. Core Cryptographic Components include Continuous Entropy Lattice (CEL) for lattice-based entropy generation with quality metrics, Probabilistic Hashing Engine (PHE) for multi-path hashing with configurable path count, Contextual Key Emergence (CKE) for key derivation from lattice state intersections, Data-State Folding (DSF) for data transformation using tensor operations, Polymorphic Cryptographic Flow (PCF) for parameter modification based on entropy state, Decoy System for variable-count fake data vectors for obfuscation, and State Persistence for serialization of cryptographic state to binary format.',
         language: 'Python',
         topics: ['alpha', 'cryptographic-algorithms', 'cryptography'],
         github_url: 'https://github.com/Seigr-lab/SeigrToolsetCrypto',
@@ -39,12 +39,12 @@ function loadRepositories() {
     try {
         const projects = Object.values(PROJECTS_DATA);
         displayRepositories(projects);
-        
+
     } catch (error) {
         console.error('Error loading projects:', error);
         const loading = document.getElementById('repos-loading');
         const errorDiv = document.getElementById('repos-error');
-        
+
         if (loading) loading.style.display = 'none';
         if (errorDiv) {
             errorDiv.style.display = 'block';
@@ -58,7 +58,7 @@ function loadRepositories() {
 function displayRepositories(projects) {
     const container = document.getElementById('repos-container');
     const loading = document.getElementById('repos-loading');
-    
+
     if (projects.length === 0) {
         loading.textContent = 'No projects found.';
         return;
@@ -106,22 +106,22 @@ function displayRepositories(projects) {
 function loadProjectReadme(projectName) {
     const readmeContainer = document.getElementById(`readme-${projectName}`);
     const isVisible = readmeContainer.style.display !== 'none';
-    
+
     // Toggle visibility
     if (isVisible) {
         readmeContainer.style.display = 'none';
         return;
     }
-    
+
     readmeContainer.style.display = 'block';
-    
+
     const projectData = PROJECTS_DATA[projectName];
-    
+
     if (!projectData) {
         readmeContainer.innerHTML = '<div class="readme-error">Project not found</div>';
         return;
     }
-    
+
     // Display project info directly - no markdown needed!
     readmeContainer.innerHTML = `
         <div class="project-details">
@@ -137,7 +137,7 @@ function loadProjectReadme(projectName) {
 
 
 // Load repositories when page loads (only on pages that have the repos container)
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     if (document.getElementById('repos-container')) {
         loadRepositories();
     }
