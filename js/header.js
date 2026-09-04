@@ -29,7 +29,7 @@ function createHeader() {
     // Generate nav links with active states
     const navLinks = [
         { href: `${basePath}index.html`, text: 'Seigr Lab' },
-        { href: `${basePath}html/beekeeping.html`, text: 'Beekeeping' },
+        { href: `${basePath}html/insektsreservat.html`, text: 'Insect Reserve' },
         { href: `${basePath}html/sound.html`, text: 'Sound' },
         { href: `${basePath}html/manifesto.html`, text: 'Manifesto' }
     ];
