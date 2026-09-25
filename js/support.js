@@ -45,7 +45,7 @@ function createSupportModal() {
                 </div>
                 
                 <div class="support-modal-body">
-                    <p class="support-intro">Help us build technology in harmony with life. Choose your preferred method:</p>
+                    <p class="support-intro">Help us build the Seigr ecosystem. Choose your preferred method:</p>
                     
                     <div class="payment-options">
                         ${Object.entries(PAYMENT_OPTIONS).map(([key, option]) => {

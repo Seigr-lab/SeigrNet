@@ -71,7 +71,7 @@ async function main() {
     };
     const screenshot=async name=>fs.writeFile(path.join(out,name+'.png'),Buffer.from((await command('Page.captureScreenshot',{format:'png'})).data,'base64'));
     await command('Page.enable');await command('Runtime.enable');await command('Network.enable');
-    const notebooks=['index','concepts','seigrasm','silicon','experiments','evidence','method','electrical','stability','repeatability','freshness','transitions','held','adaptive','bounded','guide'];
+    const notebooks=['index','concepts','seigrasm','silicon','experiments','evidence','method','electrical','stability','repeatability','freshness','transitions','held','adaptive','bounded','separation','guide'];
     for(const width of [1440,390]){
       await command('Emulation.setDeviceMetricsOverride',{width,height:width===390?844:1080,deviceScaleFactor:1,mobile:false});
       for(const file of ['index.html','html/insektsreservat.html','html/sound.html','html/manifesto.html',...notebooks.map(n=>'lab/hyphos/'+n+'.html')]){
@@ -83,16 +83,16 @@ async function main() {
           await check(file+' project context '+width,"document.querySelector('.lab-return').href.endsWith('/preview/index.html') && document.querySelector('.site-nav [aria-current]').textContent==='Seigr Lab'");
           await check(file+' notebook navigation '+width,"document.querySelectorAll('.chapter-menu a').length===7 && !document.querySelector('iframe')");
         }
-        if(['index.html','lab/hyphos/index.html','lab/hyphos/experiments.html','lab/hyphos/adaptive.html','lab/hyphos/bounded.html','html/sound.html'].includes(file))await screenshot(file.replaceAll('/','-').replace('.html','')+'-'+width);
+        if(['index.html','lab/hyphos/index.html','lab/hyphos/experiments.html','lab/hyphos/adaptive.html','lab/hyphos/bounded.html','lab/hyphos/separation.html','html/sound.html'].includes(file))await screenshot(file.replaceAll('/','-').replace('.html','')+'-'+width);
       }
     }
     await go('lab/hyphos/experiments.html');
-    await check('eight experiments',"document.querySelectorAll('.study-card').length===8");
+    await check('nine experiments',"document.querySelectorAll('.study-card').length===9");
     await evaluate("document.querySelector('#search').value='F34EB0FBBAF8';document.querySelector('#search').dispatchEvent(new Event('input'))");
     await check('search current candidate',"document.querySelectorAll('.study-card').length===1 && document.querySelector('.study-card h3').textContent.includes('Calibration renewal')");
     await check('pending series exposes earlier results',"document.querySelector('.study-card a[href=\"adaptive.html#results\"]')!==null");
     await evaluate("document.querySelector('#clear-search').click();document.querySelector('[data-filter=passed]').click()");
-    await check('outcome filtering',"document.querySelectorAll('.study-card').length===1 && document.querySelector('.study-card h3').textContent.includes('trigger')");
+    await check('outcome filtering',"document.querySelectorAll('.study-card').length===2 && [...document.querySelectorAll('.study-card h3')].some(h=>h.textContent.includes('trigger')) && [...document.querySelectorAll('.study-card h3')].some(h=>h.textContent.includes('Separation'))");
     await go('lab/hyphos/adaptive.html#boot-2-results');
     await check('deep result link',"document.querySelector('#boot-2-results').textContent.includes('eight from correct to unresolved')");
     await evaluate("document.querySelector('.archive-reference').click()");
