@@ -81,7 +81,7 @@ function createSupportModal() {
                     </div>
                     
                     <div class="support-footer">
-                        <p>Every contribution helps us continue developing open-source, decentralized technologies. Thank you! 🙏</p>
+                        <p>Every contribution helps continue developing the Seigr ecosystem. Thank you! 🙏</p>
                     </div>
                 </div>
             </div>
