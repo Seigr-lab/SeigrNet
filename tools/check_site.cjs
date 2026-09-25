@@ -92,7 +92,7 @@ async function main() {
     await check('search current candidate',"document.querySelectorAll('.study-card').length===1 && document.querySelector('.study-card h3').textContent.includes('Calibration renewal')");
     await check('pending series exposes earlier results',"document.querySelector('.study-card a[href=\"adaptive.html#results\"]')!==null");
     await evaluate("document.querySelector('#clear-search').click();document.querySelector('[data-filter=passed]').click()");
-    await check('outcome filtering',"document.querySelectorAll('.study-card').length===2 && [...document.querySelectorAll('.study-card h3')].some(h=>h.textContent.includes('trigger')) && [...document.querySelectorAll('.study-card h3')].some(h=>h.textContent.includes('Separation'))");
+    await check('outcome filtering',"document.querySelectorAll('.study-card').length===1 && document.querySelector('.study-card h3').textContent.includes('trigger')");
     await go('lab/hyphos/adaptive.html#boot-2-results');
     await check('deep result link',"document.querySelector('#boot-2-results').textContent.includes('eight from correct to unresolved')");
     await evaluate("document.querySelector('.archive-reference').click()");
