@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Capability discovery, direct component control and firmware replacement, developed from Hyphos hardware requirements."><title>Silicon access | Hyphos &middot; Silicon foundations</title><link rel="stylesheet" href="style.css"><script src="notebook.js" defer></script><link rel="stylesheet" href="../../css/nav.css"><link rel="stylesheet" href="../../css/notebook.css"></head>
+<body class="native-chapter public-notebook" data-chapter="silicon" data-kind="chapter"><div id="header-container" data-base-path="../../">
+<header class="site-header"><a class="site-brand" href="../../index.html"><img src="../../assets/seigr_logo.png" width="44" height="44" alt=""><span>Seigr<small>a continuum of code, sound, and nature</small></span></a>
+<nav class="site-nav" aria-label="Seigr"><a href="../../index.html" aria-current="location">Seigr Lab</a><a href="../../html/insektsreservat.html">Insect Reserve</a><a href="../../html/sound.html">Sound</a><a href="../../html/manifesto.html">Manifesto</a></nav></header></div><a class="skip-link" href="#main">Skip to content</a><aside class="sidebar"><a class="lab-return" href="../../index.html">&larr; Seigr Lab / all projects</a>
+<a class="brand" href="index.html"><img src="brand.svg" width="43" height="43" alt=""><span>HYPHOS<small>SEIGROS RESEARCH</small></span></a>
+<div class="chapter"><span class="eyebrow">LAB NOTEBOOK / 01</span><p>Silicon foundations</p><small>SEIGRASM, electrical states &amp; Hyphos</small></div>
+<details class="chapter-menu" open><summary>Notebook navigation</summary>
+<nav aria-label="Notebook overview"><a data-page="index" href="index.html">Overview</a></nav>
+<p class="nav-label">SEIGRASM &amp; HYPHOS</p><nav aria-label="SEIGRASM and Hyphos">
+<a data-page="concepts" href="concepts.html"><span>01</span>Concepts &amp; relations</a>
+<a data-page="seigrasm" href="seigrasm.html"><span>02</span>SEIGRASM</a>
+<a data-page="silicon" href="silicon.html"><span>03</span>Silicon access</a></nav>
+<p class="nav-label">EXPERIMENTAL RESEARCH</p><nav aria-label="Experimental research">
+<a data-page="experiments" href="experiments.html">Experiments</a>
+<a data-page="evidence" href="evidence.html">Evidence &amp; provenance</a>
+<a data-page="method" href="method.html">Research method</a></nav>
+</details><a class="help-link" href="guide.html">Using this notebook &#8599;</a></aside>
+<main id="main" tabindex="-1"><header class="topbar"><a href="index.html">LAB NOTEBOOK / 01</a><span>CHAPTER 03 / SILICON ACCESS</span></header>
+<div class="breadcrumbs"><a href="index.html">Silicon foundations</a><span aria-hidden="true"> / </span><span>Silicon access</span></div>
+<section class="hero" aria-labelledby="page-title"><div><p class="eyebrow">CHAPTER 03</p>
+    <h1 id="page-title">Silicon access<span>.</span></h1><p>Capability discovery, direct component control and firmware replacement, developed from Hyphos hardware requirements.</p>
+    </div></section>
+<p class="evidence-shortcut"><a href="#experimental-evidence">Supporting experiments and qualification &darr;</a></p><div class="chapter-layout"><article class="chapter-content">
+    <section id="firmware" class="panel" aria-labelledby="firmware-title">
+      <h2 id="firmware-title">Firmware replacement and agnosticism</h2>
+      <p><strong>Design objective.</strong> SEIGRASM is the project's custom assembly language: explicit instructions for controlling available silicon and establishing the foundation from which Hyphos self-bootstraps and SeigrOS develops. Firmware replacement belongs to this objective. Existing vendor software is an apparatus dependency to investigate and replace wherever an executable replacement can be installed.</p>
+      <p><strong><a href="concepts.html#agnosticism">Agnosticism.</a></strong> Hyphos operations describe the required capability independently of a particular board. Discovery and verified instruction implementations establish how available components can realize that capability within their electrical and architectural limits. The common operation can have different CPU opcodes, register mappings and entry procedures. A discovered register address or successful instruction does not imply unrestricted access to every component.</p>
+      <div class="table-wrap"><table><caption>Different mechanisms require different replacement experiments</caption><thead><tr><th>Mechanism</th><th>Required investigation</th><th>Scope of replacement</th></tr></thead><tbody>
+        <tr><th>Writable executable storage</th><td>Execution ISA, reset entry, image format, loading checks, write procedure and recovery.</td><td>Develop and install project-owned firmware once those interfaces are established. An update mechanism alone does not establish that it accepts arbitrary replacement code.</td></tr>
+        <tr><th>Code loaded into volatile memory</th><td>Who loads it, which processor executes it, and how execution is started.</td><td>Replace the uploaded instruction stream and its initialization procedure.</td></tr>
+        <tr><th>Fixed ROM or programmed OTP</th><td>Exact immutable region, executed role and any documented alternative entry.</td><td>Existing fixed contents cannot be rewritten through ordinary software. Alternative entry or replacement of dependent writable stages must be demonstrated separately.</td></tr>
+        <tr><th>Control registers and hardware sequencers</th><td>Register effects, state transitions, access permissions and persistence.</td><td>Direct configuration can replace firmware-mediated control. It does not establish that executable firmware inside the component was replaced.</td></tr>
+      </tbody></table>
+    </div>
+      <p><strong>Current dependency inventory.</strong> The BCM2712 ROM and onboard EEPROM boot path still load the SD payload and establish its initial execution conditions. The documented <a href="https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#recoverybin">SD recovery entry</a> is relevant to a later replacement investigation; its existence does not demonstrate an unrestricted loader. Public EEPROM images provide material for static reverse engineering, but they are not copies verified against this board's complete installed image. No EEPROM or OTP write occurs in the present experiment. The <a href="electrical.html#results">returned experiment</a> records direct DA9091 register transactions and raw ADC observations on this apparatus; a replaceable executable firmware interface inside that PMIC has not been established.</p>
+      <p><strong>Decision.</strong> Test native electrical access through the existing bus pins before attempting persistent boot-firmware replacement. This isolates a concrete access hypothesis, preserves an SD-recorded result when a prerequisite fails, and identifies the remaining dependencies. It does not make the existing firmware a required foundation of SEIGRASM or SeigrOS.</p>
+    </section>
+
+    <section id="observation" class="panel" aria-labelledby="observation-title">
+      <h2 id="observation-title">Hyphos hardware observation</h2>
+      <p>The unfinished <a href="evidence.html#availability" class="archive-reference" title="Private archive reference; see data availability">HAL implementation</a> supplies the relation <code>native_adc_read &rarr; native.mmio_read &rarr; memory_read</code>. The <a href="evidence.html#availability" class="archive-reference" title="Private archive reference; see data availability">native access extension</a> defines readable regions and an intrinsic memory read. These provide the reference requirement for the <a href="evidence.html#availability" class="archive-reference" title="Private archive reference; see data availability">AArch64 observation operation</a>: validate a selected access, acquire its raw value and express the result in senary. Other discovery and resource-combination logic remains available as reference; its full dependency graph is not required by this elementary operation.</p>
+      <p>The 408-octet instruction stream has two callable entries. Entry <code>0x0</code> accepts a request and writes twenty-five numeric senary digits, most significant first. Entry <code>0x4</code> performs the bounded read and returns its unsigned value. The existing AArch64 seed can prepare, publish and call the complete observation stream from senary input. All target behavior is in the authored opcode words; Python and Unicorn supply packaging and software validation only.</p>
+      <div class="table-wrap"><table>
+        <caption>Observation request at entry 0x0; decimal offsets and octet units</caption>
+        <thead><tr><th scope="col">Offset</th><th scope="col">Unsigned 64-bit cell</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">0, 8, 16</th><td>Selected address, region base, region extent.</td></tr>
+          <tr><th scope="row">24, 32</th><td>Access width (1, 2, 4 or 8); read permission (exactly 1).</td></tr>
+          <tr><th scope="row">40, 48</th><td>Result address and available capacity; at least 25 octets.</td></tr>
+        </tbody>
+      </table>
+    </div>
+      <p>The request uses seven aligned little-endian cells. Complete access containment, natural alignment, extent overflow, permission, result capacity and result intersection with the request or observed region are checked before the target load. Success writes exactly twenty-five digits in the range zero through five. Status zero denotes success; statuses 1 through 5 identify invalid extent/request, denied read, invalid width/alignment, range/intersection and insufficient capacity, respectively. Rejection leaves result storage unchanged, so the caller must inspect status before consuming it. The source header defines both entry contracts and memory preconditions.</p>
+      <p>This implementation separates status from value: a successful zero observation is distinct from a rejected read. The reference <code>mmio_read</code> returns <code>"0"</code> on denied access, and <code>native_adc_read</code> applies a truth-value fallback; neither behavior is used to establish observation validity here. The request's octet extent is an explicit CPU access quantity. It does not redefine the reference <code>IORegion.size</code>, declared in Seigsits, or specify Seigsit layout. The Hyphos representation-to-access relation remains to be implemented.</p>
+      <p><a href="evidence.html#availability" class="archive-reference" title="Private archive reference; see data availability">Recorded validation</a> identifies source and opcode hashes and reports twelve passing <a href="evidence.html#availability" class="archive-reference" title="Private archive reference; see data availability">execution tests</a>. Checks exercise all supported widths, small-region boundary combinations, unsigned range limits, senary carry boundaries, rejected requests, unchanged output on failure, one target load per successful call, register preservation, relocation and execution through the native seed. Mapped RAM supplies the test values; no peripheral model or physical measurement is used.</p>
+
+      <p><code>DSB SY</code> precedes and follows the architectural load. Physical peripheral access also requires appropriate memory attributes and known read side effects; barriers do not establish the mapping. See <a href="https://developer.arm.com/-/media/Arm%20Developer%20Community/PDF/Learn%20the%20Architecture/Armv8-A%20memory%20model%20guide.pdf?revision=58b1dd0a-3800-4218-b21a-f95a0332034c">Arm's memory model guide</a>. Bus faults and nonresponding devices are outside this operation's status contract.</p>
+      <p>This is an AArch64 elementary implementation, not execution of the Hyphos source above. The request receives its region from the caller; it does not discover an ADC or verify an I/O map. No voltage conversion, firmware request, persistent recording or SD boot setup is included. Physical sensor access requires a verified bus/register relation, an ADC transfer function and recoverable acquisition evidence.</p>
+    </section>
+    
+    <section id="access-evidence" class="panel"><h2>From access to evidence</h2>
+    <p>The returned AArch64 experiment connects native GPIO selection, I2C transactions, ADC acquisition and persistent SD records. Its status fields and raw observations are evaluated together. The next access question is the reliability of the ADC observation path under the declared control sequence.</p>
+    <p>Replacement of the initial ROM/EEPROM loading path remains a distinct investigation. No persistent firmware was rewritten in this run. <a href="electrical.html#interpretation">The result and remaining questions</a> identify what the returned evidence supports.</p>
+    </section>
+    <section id="experimental-evidence" class="panel evidence-map"><h2>Physical evidence and open access questions</h2><dl class="claim-links"><dt>Direct component access</dt><dd><a href="electrical.html#results">Native PMIC access</a> returned register transactions, ADC observations and an SD journal on the identified apparatus.</dd><dt>Acquisition integrity</dt><dd><a href="stability.html#observations">Stability diagnostics</a> retained agreeing result pairs for all 3,888 observations. Pair agreement does not prove independent conversion freshness.</dd><dt>Firmware replacement</dt><dd>The experiments retain the existing boot loader and do not establish complete firmware exclusion. The <a href="#firmware">replacement mechanisms</a> remain development requirements.</dd></dl><p><a href="experiments.html">Experimental questions and records &rarr;</a></p></section>
+<section class="related panel"><h2>Continue reading</h2>
+    <div class="artifact-links"><a href="concepts.html#firmware">Firmware definition</a><a href="electrical.html">Electrical comparison &rarr;</a></div></section>
+    </article>
+    <aside class="page-toc" aria-label="Page contents"></aside>
+    </div>
+<footer><span>HYPHOS / SEIGROS</span><p>Silicon foundations &middot; Lab notebook 01</p>
+    <a href="evidence.html#provenance-section">Evidence &amp; provenance &#8599;</a></footer>
+    </main></body></html>

@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Project-owned native opcodes, senary notation, execution contracts and the foundation for Hyphos bootstrap."><title>SEIGRASM | Hyphos &middot; Silicon foundations</title><link rel="stylesheet" href="style.css"><script src="notebook.js" defer></script><link rel="stylesheet" href="../../css/nav.css"><link rel="stylesheet" href="../../css/notebook.css"></head>
+<body class="native-chapter public-notebook" data-chapter="seigrasm" data-kind="chapter"><div id="header-container" data-base-path="../../">
+<header class="site-header"><a class="site-brand" href="../../index.html"><img src="../../assets/seigr_logo.png" width="44" height="44" alt=""><span>Seigr<small>a continuum of code, sound, and nature</small></span></a>
+<nav class="site-nav" aria-label="Seigr"><a href="../../index.html" aria-current="location">Seigr Lab</a><a href="../../html/insektsreservat.html">Insect Reserve</a><a href="../../html/sound.html">Sound</a><a href="../../html/manifesto.html">Manifesto</a></nav></header></div><a class="skip-link" href="#main">Skip to content</a><aside class="sidebar"><a class="lab-return" href="../../index.html">&larr; Seigr Lab / all projects</a>
+<a class="brand" href="index.html"><img src="brand.svg" width="43" height="43" alt=""><span>HYPHOS<small>SEIGROS RESEARCH</small></span></a>
+<div class="chapter"><span class="eyebrow">LAB NOTEBOOK / 01</span><p>Silicon foundations</p><small>SEIGRASM, electrical states &amp; Hyphos</small></div>
+<details class="chapter-menu" open><summary>Notebook navigation</summary>
+<nav aria-label="Notebook overview"><a data-page="index" href="index.html">Overview</a></nav>
+<p class="nav-label">SEIGRASM &amp; HYPHOS</p><nav aria-label="SEIGRASM and Hyphos">
+<a data-page="concepts" href="concepts.html"><span>01</span>Concepts &amp; relations</a>
+<a data-page="seigrasm" href="seigrasm.html"><span>02</span>SEIGRASM</a>
+<a data-page="silicon" href="silicon.html"><span>03</span>Silicon access</a></nav>
+<p class="nav-label">EXPERIMENTAL RESEARCH</p><nav aria-label="Experimental research">
+<a data-page="experiments" href="experiments.html">Experiments</a>
+<a data-page="evidence" href="evidence.html">Evidence &amp; provenance</a>
+<a data-page="method" href="method.html">Research method</a></nav>
+</details><a class="help-link" href="guide.html">Using this notebook &#8599;</a></aside>
+<main id="main" tabindex="-1"><header class="topbar"><a href="index.html">LAB NOTEBOOK / 01</a><span>CHAPTER 02 / SEIGRASM</span></header>
+<div class="breadcrumbs"><a href="index.html">Silicon foundations</a><span aria-hidden="true"> / </span><span>SEIGRASM</span></div>
+<section class="hero" aria-labelledby="page-title"><div><p class="eyebrow">CHAPTER 02</p>
+    <h1 id="page-title">SEIGRASM<span>.</span></h1><p>Project-owned native opcodes, senary notation, execution contracts and the foundation for Hyphos bootstrap.</p>
+    </div></section>
+<p class="evidence-shortcut"><a href="#experimental-evidence">Supporting experiments and qualification &darr;</a></p><div class="chapter-layout"><article class="chapter-content">
+    <section id="foundation" class="panel" aria-labelledby="foundation-title">
+      <h2 id="foundation-title">Purpose and execution boundary</h2>
+      <p><a href="concepts.html#seigrasm">SEIGRASM</a> supplies project-owned instructions at the CPU execution boundary. Each implementation contains explicit native opcodes, operands and relative branch displacements. The CPU executes the corresponding bytes. Comments and source numeral spelling are not executed.</p>
+      <p>The current seed validates a senary representation of native instruction octets, writes those octets into a supplied memory region, performs instruction publication, and calls the resulting code. Publication means making preceding code writes available to subsequent instruction fetch on the executing core. The generated code can read and change memory and return a result.</p>
+      <p>The common contract is independent of a board name. Its realization depends on the selected instruction set, execution mode and available facilities. Identical input semantics must produce the same specified effect; the physical opcode bytes differ between architectures. Runtime resource discovery can follow a compatible initial entry. These images do not determine an unknown ISA before any compatible instructions have executed.</p>
+      <p>The target path contains no firmware request, OS service, external compiler, assembler, linker or host-language runtime. The supplied entry is callable machine code. It does not yet establish reset entry, a boot-medium handoff, memory mappings or initial stack storage, and therefore does not establish firmware-independent power-on boot.</p>
+    </section>
+
+    <section id="implementations" class="panel" aria-labelledby="implementations-title">
+      <h2 id="implementations-title">ISA implementations and artifact identity</h2>
+      <p>All three implementations are available as <code>.seigrasm</code> sources and directly corresponding native images. Sizes and counts in this chapter are decimal; addresses and offsets marked <code>0x</code> are hexadecimal.</p>
+      <div class="table-wrap"><table>
+        <caption>Native images; all entry offsets are relative to the image base</caption>
+        <thead><tr><th scope="col">ISA / mode</th><th scope="col">Source / image</th><th scope="col">Octets</th><th scope="col">Entry</th><th scope="col">Prepare</th><th scope="col">Publish</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">AArch64, little-endian data</th><td><a href="evidence.html#availability" class="archive-reference" title="Private archive reference; see data availability">Source</a> / <a href="evidence.html#availability" class="archive-reference" title="Private archive reference; see data availability">image</a></td><td>444</td><td><code>0x0</code></td><td><code>0x30</code></td><td><code>0x110</code></td></tr>
+          <tr><th scope="row">x86-64, 64-bit mode</th><td><a href="evidence.html#availability" class="archive-reference" title="Private archive reference; see data availability">Source</a> / <a href="evidence.html#availability" class="archive-reference" title="Private archive reference; see data availability">image</a></td><td>368</td><td><code>0x0</code></td><td><code>0x33</code></td><td><code>0x12a</code></td></tr>
+          <tr><th scope="row">RV64IM + Zifencei, little-endian data</th><td><a href="evidence.html#availability" class="archive-reference" title="Private archive reference; see data availability">Source</a> / <a href="evidence.html#availability" class="archive-reference" title="Private archive reference; see data availability">image</a></td><td>364</td><td><code>0x0</code></td><td><code>0x40</code></td><td><code>0x118</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+      <p>The <a href="evidence.html#availability" class="archive-reference" title="Private archive reference; see data availability">image manifest</a> records complete source and image SHA-256 identities. The <a href="evidence.html#availability" class="archive-reference" title="Private archive reference; see data availability">literal packager</a> copies each AArch64/RV64 encoding as one little-endian four-octet word and each x86 encoding as one octet. It performs numeral conversion and byte serialization only; it does not select instructions, resolve labels or supply target behavior. Branch displacements are already present in the sources.</p>
+      <details><summary>Native image SHA-256</summary>
+        <p>AArch64 <code class="hash">f395d80e69f6d59ec04febaca86c7aec5c174c4b7cb451628d99443f002d11ec</code></p>
+        <p>x86-64 <code class="hash">30017a072c99b0c89c783189016878f208d3593722b7fd2b9641486bdc806c05</code></p>
+        <p>RV64IM + Zifencei <code class="hash">9c2039c077f75cec65d8b853930065a320516816977ecd6d3cf1e0253fe1fdaf</code></p>
+      </details>
+    </section>
+
+    <section id="contract" class="panel" aria-labelledby="contract-title">
+      <h2 id="contract-title">Senary and execution contract</h2>
+      <h3>Source notation</h3>
+      <p>Unmarked SEIGRASM literals are <a href="concepts.html#senary">senary</a>. Prefixes <code>0d</code>, <code>0x</code> and <code>0b</code> select decimal, hexadecimal and binary. Thus <code>10</code>, <code>0d6</code>, <code>0x06</code> and <code>0b110</code> denote the same value. The native sources use explicit hexadecimal encodings to expose the instruction fields for ISA verification. Each token denotes a complete native word or octet according to the implementation. <code>//</code> introduces a source comment. Labels appearing in comments are explanatory only.</p>
+      <h3>In-memory senary input</h3>
+      <p>The entry consumes four numeric senary digits per output octet, most significant first. Each input digit occupies one octet whose value is between zero and five; it is not an ASCII character. An input group <code>[1, 1, 0, 3]</code> has value 255 and produces <code>0xff</code>. The next group <code>[1, 1, 0, 4]</code> has value 256 and is rejected. Four digits are the smallest fixed senary group capable of representing every physical octet.</p>
+      <p>This grouping is a transport for the instruction bytes required by these CPUs. It does not define a Hyphos value width, Seigbit layer, Seigsit layout or physical six-state carrier. Senary notation and native instruction execution alone do not establish six electrical states.</p>
+      <div class="signal-path" aria-label="Native execution sequence"><span>Stable senary input</span><b>&rarr;</b><span>Full validation</span><b>&rarr;</b><span>Write opcode octets</span><b>&rarr;</b><span>Publish instructions</span><b>&rarr;</b><span>Call generated code</span></div>
+      <p>The source must be nonempty and its digit count divisible by four. Preparation checks required capacity, extent wraparound, intersection and instruction alignment before reading digits. It validates the entire input before writing the first destination octet. A second pass decodes the unchanged source into the destination. A preparation failure returns zero produced octets and performs no destination write or generated-code call.</p>
+      <div class="table-wrap"><table>
+        <caption>Shared status values</caption>
+        <thead><tr><th scope="col">Status</th><th scope="col">Meaning</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">0</th><td>Successful preparation, or generated code returned successfully.</td></tr>
+          <tr><th scope="row">1</th><td>Empty or incomplete source group, or source/destination address addition wraps.</td></tr>
+          <tr><th scope="row">2</th><td>Destination capacity is smaller than the required output.</td></tr>
+          <tr><th scope="row">3</th><td>Digit exceeds five, or a decoded group exceeds one octet.</td></tr>
+          <tr><th scope="row">4</th><td>Used source and destination extents intersect. Adjacent extents are accepted.</td></tr>
+          <tr><th scope="row">5</th><td>Instruction alignment fails, or the publication helper receives an invalid extent.</td></tr>
+        </tbody>
+      </table>
+    </div>
+      <p>The root entry returns status and generated-code result; preparation returns status and produced octet count. Publication returns status and generated-code result. The second return value is zero on any reported failure. Root entry returns preparation failure immediately. Direct publication rejects an empty or wrapping executable extent; AArch64/RV64 also reject misalignment. AArch64/RV64 preparation checks alignment before capacity; x86-64 imposes no instruction alignment check. For inputs violating multiple conditions, the first check reached determines the status.</p>
+      <p>Validation checks the transport and memory extents, not instruction legality or program safety. Supplied opcode content is trusted. Faults, non-returning payloads and concurrent mutation are outside this contract; they are not converted into the status values above.</p>
+    </section>
+
+    <section id="entry" class="panel" aria-labelledby="entry-title">
+      <h2 id="entry-title">Entry, memory and instruction visibility</h2>
+      <div class="table-wrap"><table>
+        <caption>Project entry ABI: register order carries the same arguments on every ISA</caption>
+        <thead><tr><th scope="col">Boundary</th><th scope="col">AArch64</th><th scope="col">x86-64</th><th scope="col">RV64IM + Zifencei</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Root / prepare inputs: source, digit count, destination, capacity, argument</th><td><code>x0, x1, x2, x3, x4</code></td><td><code>RDI, RSI, RDX, RCX, R8</code></td><td><code>a0, a1, a2, a3, a4</code></td></tr>
+          <tr><th scope="row">Publish inputs: destination, octet count, argument</th><td><code>x0, x1, x2</code></td><td><code>RDI, RSI, RDX</code></td><td><code>a0, a1, a2</code></td></tr>
+          <tr><th scope="row">Return: status, result / produced count</th><td><code>x0, x1</code></td><td><code>RAX, RDX</code></td><td><code>a0, a1</code></td></tr>
+          <tr><th scope="row">Generated-code argument / result</th><td><code>x0 / x0</code></td><td><code>RDI / RAX</code></td><td><code>a0 / a0</code></td></tr>
+          <tr><th scope="row">Preserved registers</th><td><code>x19..x29</code>, SP; return through LR</td><td><code>RBX, RBP, R12..R15</code>; return through stack</td><td><code>s0..s11</code>, SP; return through ra</td></tr>
+        </tbody>
+      </table>
+    </div>
+      <p>Direct preparation uses the first four arguments; the fifth is used by the root entry. Counts, pointers and return registers follow the physical 64-bit ABI. Generated code must preserve the listed registers and stack, obey the selected calling convention and return normally. Other registers and arithmetic flags may change. No vector or floating-point preservation contract is established.</p>
+      <ul>
+        <li>The initial execution mode must already match the image. AArch64 and RV64IM require four-octet-aligned entry and generated extent; this RV64 implementation does not support compressed instructions. x86-64 permits an unaligned generated entry.</li>
+        <li>Code, input, output and stack must be accessible normal memory. The destination must permit writing and execution. Input remains immutable throughout both passes. Used source, destination, seed and stack extents must be disjoint. Code checks source/destination intersection; the caller establishes the remaining memory conditions.</li>
+        <li>AArch64 and RV64 require a 16-octet-aligned incoming stack. For x86-64, incoming RSP modulo 16 is eight, with the return address at RSP; calls into generated code maintain that condition. The x86 seed uses no red zone. Reserve at least 48 octets below the incoming stack pointer for AArch64/RV64 seed frames, or 64 octets for x86-64, in addition to the generated program's own stack use.</li>
+        <li>The code does not configure exceptions, interrupts, translation, memory allocation or persistent storage. Any asynchronous handler or concurrent execution must preserve these entry conditions.</li>
+      </ul>
+      <h3>Architecture-specific publication</h3>
+      <p><strong>AArch64:</strong> read <code>CTR_EL0</code>, derive data and instruction line sizes independently, clean every intersecting data line with <code>DC CVAU</code>, execute <code>DSB SY</code>, invalidate every intersecting instruction line with <code>IC IVAU</code>, then execute <code>DSB SY</code> and <code>ISB</code> before the call. The execution level must permit those operations. This follows the cache publication requirements described by <a href="https://developer.arm.com/community/arm-community-blogs/b/architectures-and-processors-blog/posts/caches-self-modifying-code-implementing-clear-cache">Arm's instruction-cache publication guidance</a>.</p>
+      <p><strong>x86-64:</strong> execute <code>MFENCE</code>, then the serializing <code>CPUID</code> instruction with leaf and subleaf zero, before the generated-code call. CPUID must be available at the entry privilege level. The <a href="https://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-vol-3a-part-1-manual.pdf">Intel system programming manual</a>, section on self-modifying code, specifies serialization between code modification and execution.</p>
+      <p><strong>RV64IM + Zifencei:</strong> the decoder uses integer multiplication from M; publication executes <code>FENCE RW,RW</code> followed by <code>FENCE.I</code>. The <a href="https://docs.riscv.org/reference/isa/unpriv/zifencei.html">RISC-V Zifencei specification</a> defines instruction-fetch synchronization on the executing hart.</p>
+      <p>Each implementation publishes and calls on the same core or hart. Publication to other processors, memory aliases, device memory and concurrent code replacement require additional contracts and verification.</p>
+    </section>
+
+    <section id="validation" class="panel" aria-labelledby="validation-title">
+      <h2 id="validation-title">Validation record</h2>
+      <p>The <a href="evidence.html#availability" class="archive-reference" title="Private archive reference; see data availability">recorded validation</a> reports <strong>42 passing tests, zero failures</strong>, using Unicorn 2.1.3 and Python 3.12.4. It identifies all tested sources and native images by SHA-256 and confirms the sources remained unchanged during the run. Thirteen native execution tests run independently for each ISA; three further tests cover source numeral interpretation, invalid literals and native word order.</p>
+      <p>The <a href="evidence.html#availability" class="archive-reference" title="Private archive reference; see data availability">execution fixture</a> maps the literal image and input, supplies register and memory preconditions, and starts the emulated CPU at its entry. Observation hooks record instructions and memory writes; they do not replace instructions or provide decoder behavior. Test payloads contain literal native encodings.</p>
+      <div class="table-wrap"><table>
+        <caption>Observed behavior and qualification boundary</caption>
+        <thead><tr><th scope="col">Check</th><th scope="col">Observation</th><th scope="col">Supported conclusion</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Generated-code execution</th><td>Payload reads an argument cell, adds six, writes a second cell and returns its value. Inputs include zero through five and larger 64-bit values.</td><td>The native seed decodes and enters the supplied code with the specified memory and call behavior in the emulator.</td></tr>
+          <tr><th scope="row">Instruction-source dependence</th><td>Replacing the payload's add-six opcode with add-five changes the result at the same destination; the seed is unchanged.</td><td>The supplied opcode content determines the executed operation.</td></tr>
+          <tr><th scope="row">Decoder and rejection</th><td>All 256 possible octets decode exactly. Invalid digits, out-of-range groups, incomplete input, capacity failures, address wrap and intersection return errors without output writes.</td><td>Transport decoding and the exercised failure paths satisfy the stated contract.</td></tr>
+          <tr><th scope="row">Memory and ABI</th><td>Register preservation, stack restoration, guarded output, unchanged source/seed, adjacent extents and image relocation pass.</td><td>The exercised calls preserve their declared boundaries.</td></tr>
+          <tr><th scope="row">Publication</th><td>Required publication instructions precede payload execution. AArch64 line addresses cover the written extent using the emulator's reported CTR line sizes.</td><td>The recorded instruction sequence is present and ordered. Hardware cache coherence, other cache geometries and remote-core visibility are not qualified.</td></tr>
+        </tbody>
+      </table>
+    </div>
+      <p>These results are software validation of actual native instruction streams. They provide no physical timing, energy, electrical-state, reset-entry or Seigsit-creation measurement. The 42 tests are checks of this foundation, not 42 physical experiments. Earlier apparatus records supply no qualification for these new images.</p>
+
+    </section>
+
+    <section id="hyphos" class="panel" aria-labelledby="hyphos-title">
+      <h2 id="hyphos-title">Hyphos bootstrap integration</h2>
+      <p>The next executable layer must give Hyphos operations their native behavior through these instruction sets. It can use the preparation and publication boundaries to produce and enter further code. The present seed accepts native opcodes represented in senary; it does not yet parse Hyphos source, create a Seigsit, implement Noesis or install SeigrOS. Those semantics must be implemented and tested explicitly.</p>
+      <p>Architecture-specific entry and operation encodings can expose the same Hyphos contract within each processor's limits. Additional ISA versions require their own executable implementation and common-contract verification. The Raspberry Pi is the first intended physical apparatus for the AArch64 implementation; its board name does not identify the language or establish results for the other architectures.</p>
+      <h3>Physical qualification criteria</h3>
+      <ol>
+        <li>Establish and record the initial execution mode, privilege, memory and stack conditions, including the mechanism that transfers control to the native image.</li>
+        <li>Identify the installed source, seed image and payload bytes; recover target evidence of actual entry, decoded output, payload execution and return state.</li>
+        <li>Repeat valid, altered-opcode and rejected-input cases with preserved evidence. Check the resulting memory state against the declared contract and account for the acquisition mechanism.</li>
+        <li>Qualify each ISA on identified physical apparatus before extending an execution result to that implementation. Integrate the first Hyphos payload only with a declared semantic contract and observable acceptance criteria.</li>
+      </ol>
+      <p>The three callable seeds retain their stated emulation qualification. The separate <a href="electrical.html#results">AArch64 electrical return</a> records direct bus access and acquisition; it does not qualify the common seed contract on all three ISAs.</p>
+    </section>
+    
+    <section id="firmware" class="panel"><h2>Firmware and silicon access</h2>
+    <p><a href="silicon.html#firmware">Replacement mechanisms and dependencies</a> are described in the silicon-access chapter.</p>
+    </section>
+    
+    <section id="observation" class="panel"><h2>Hardware observations</h2>
+    <p><a href="silicon.html#observation">HAL requirements and the native observation contract</a> connect the Hyphos reference to bounded silicon access.</p>
+    </section>
+    
+    <section id="electrical" class="panel"><h2>Electrical comparison</h2>
+    <p><a href="electrical.html">Read the six/sixteen-state method and returned results</a>, with direct links to the native journal and independent analysis.</p>
+    <p>The <a href="stability.html#implementation">six-state stability implementation</a> adds held-control scheduling, per-block delay selection and ADC transaction auditing to the same native access path.</p>
+    <p>The <a href="freshness.html#implementation">controlled-trigger operation</a> adds explicit trigger omission and status observations before the trigger and after cleanup. Its two callable entries and diagnostic schema are documented with the <a href="freshness.html#assessment">predefined assessment</a>. The <a href="freshness.html#results">physical return</a> met the declared trigger-dependent status criterion in all 3,888 observations. Omitted triggers retained one raw code across all six requested states. This supports checking status transitions as well as repeated result pairs; it does not by itself qualify fresh conversion or reliable state recognition.</p>
+    <p>The <a href="transitions.html#implementation">transition operation</a> combines sequence enumeration and delay/mode selection for matched direct and omitted-trigger acquisitions. The <a href="transitions.html#assessment">declared protocol</a> assesses retained-result behavior separately from six-state recognition. Untriggered diagnostics retain their raw observations and are excluded from native recognition.</p>
+    <p><a href="held.html#implementation">Held-request acquisition</a> adds a literal instruction sequence for longer consecutive observations, using the existing calibration, ADC diagnostics, restoration and native journal operations. Its <a href="held.html#results">returned assessment</a> recovered all 3,888 observations with complete diagnostics; the current recognition rule did not meet its coverage criterion.</p></section>
+    <section id="experimental-evidence" class="panel evidence-map"><h2>Validation and supporting experiments</h2><dl class="claim-links"><dt>Common seed contract</dt><dd><a href="#validation">Software validation</a> covers the stated execution model for each ISA. The electrical returns do not physically qualify all three callable seeds.</dd><dt>AArch64 native acquisition and recording</dt><dd><a href="electrical.html#results">Electrical comparison</a> recovered 1,224 observations. <a href="stability.html#results">Six-state stability</a> recovered all 3,888 scheduled observations while retaining its failed recognition criterion.</dd><dt>Repetition at a fixed delay</dt><dd><a href="repeatability.html#method">Fixed-delay repeatability</a> reused the native acquisition path across three separate boots. <a href="repeatability.html#results">All three runs</a> recovered 3,888 observations each; none met the full recognition criterion. Run 3 rejected its first calibration and retained 432 unavailable classifications.</dd></dl><p><a href="experiments.html">All experimental methods and results &rarr;</a></p></section>
+<section class="related panel"><h2>Continue reading</h2>
+    <div class="artifact-links"><a href="concepts.html#seigrasm">SEIGRASM definition</a><a href="silicon.html">Silicon access &rarr;</a></div></section>
+    <section id="renewal" class="panel"><h2>Calibration renewal and observation duration</h2><p><a href="adaptive.html#question">The renewal investigation</a> compares the first and current measured calibrations on identical later observations. <a href="evidence.html#availability" class="archive-reference" title="Private archive reference; see data availability">Cycle</a> rotates reference and validation positions; <a href="evidence.html#availability" class="archive-reference" title="Private archive reference; see data availability">adaptive acquisition</a> records raw and three-reading median decisions through the existing supervised sample path. Each representation has its own measured calibration. Failed renewal remains unavailable, and validation cannot alter calibration. <a href="adaptive.html#results">The first return</a> reconstructed all native decisions. Renewal changed 45 median decisions from unresolved to correct after round 1, with one still unresolved in that paired comparison. Four median decisions remained unresolved across the whole boot; reliable recognition is not yet established. <a href="adaptive.html#boot-2-results">Boot 2</a> accepted all twelve calibrations and reconstructed every comparison. Renewal reduced unresolved median decisions from 31 to five after round 1, while raw renewal included eight correct-to-unresolved changes. <a href="adaptive.html#boot-3-results">Boot 3</a> completed the renewal series; full recognition remained unqualified.</p></section>
+<section id="separation" class="panel"><h2>Reference separation and recognition tolerance</h2><p>The <a href="separation.html#implementation">gap-calibration operation</a> derives finite acceptance intervals from current reference extrema and neighbouring separation. It shares the existing paired acquisition and recording path. The <a href="separation.html#method">declared one-third rule</a> preserves an explicit unresolved region; the <a href="separation.html#assessment">comparison</a> counts every additional acceptance and wrong assignment. The <a href="separation.html#results">two prospective returns</a> recognized 864/864 and 863/864 medians, improving fourteen baseline rejections without a wrong assignment. All twelve candidate calibrations retained separated bands. Boot 2 retained one state-1 rejection; physical boundary challenges and independent conversion freshness remain unqualified.</p></section>
+<section id="time" class="panel"><h2>Seigr time: measured intervals</h2>
+<p>The timing foundation relates observations to an identified measuring source. Earth rotation angle (ERA) is the proposed astronomical reference. ERA and local elapsed duration require an explicit reference relation: a counter started during boot does not establish an astronomical date. The <a href="https://iers-conventions.obspm.fr/content/chapter5/icc5.pdf">IERS definition, section 5.5.3</a>, relates ERA to UT1; <a href="https://www.iausofa.org/s/sofa_ts_c.pdf">SOFA, section 3.5</a>, describes the variability of Earth rotation. ERA anchoring and physical uncertainty calibration are not implemented in this measurement increment.</p>
+<p><a href="evidence.html#availability" class="archive-reference" title="Private archive reference; see data availability">The AArch64 time instructions</a> read the physical counter with an ISB before and after the reading. The accompanying CNTFRQ value is reported configuration. It does not independently measure oscillator frequency. <a href="https://developer.arm.com/documentation/102379/latest/">Arm's Generic Timer documentation</a> defines the counter and ordering requirements. This operation uses direct instructions and makes no firmware service request.</p>
+<div class="table-wrap"><table><thead><tr><th>Entry offset (octets)</th><th>Relation</th><th>Result</th></tr></thead><tbody>
+<tr><td>0</td><td>Observe</td><td>Ordered counter reading and reported frequency.</td></tr>
+<tr><td>4</td><td>Interval</td><td>Endpoint validation, exact elapsed ticks, whole nominal seconds and an exact remainder over the reported frequency. Missing or oversized frequency, changed frequency and backward readings return distinct errors.</td></tr>
+<tr><td>8</td><td>Senary fraction</td><td>Next digit and exact remainder for a proper fraction with a positive denominator below 2<sup>32</sup>. Repeated extraction retains the remainder instead of accumulating rounding.</td></tr>
+</tbody></table></div>
+<p>Zero elapsed ticks remain distinguishable from an unavailable duration. Counter wrap, reset and power-off time are not inferred. One boot supplies the current source segment; these instructions do not yet implement migration between timing sources or discovery of timing resources on other ISAs. The unfinished reference <code>time.monotonic</code> advances by a fixed duration per call when its timer is unavailable. This increment instead leaves elapsed duration unavailable unless endpoint evidence supports it.</p>
+<p><a href="evidence.html#availability" class="archive-reference" title="Private archive reference; see data availability">The acquisition wrapper</a> preserves six values per attempted observation: start, end, initial frequency, final frequency, interval status and elapsed ticks. It retains the existing electrical return status separately. The bracket includes supervision, selection, settling, ADC transactions and any calibration or recognition performed by that call. It cannot be interpreted as the ADC conversion duration. Records are carried through the existing native senary SD journal and reconstructed by the <a href="evidence.html#availability" class="archive-reference" title="Private archive reference; see data availability">independent reader</a>.</p>
+<p>The <a href="timing.html#method">ordered timing comparison</a> retains the voltage requests, reference renewal, three-reading medians and separation rule of the <a href="separation.html#results">two preceding returns</a>. Those returns yielded 864/864 and 863/864 correct candidate decisions. Ordered intervals can establish when an unresolved observation was acquired and when subsequent observations returned inside a band. They cannot establish the physical cause of an excursion, independent conversion freshness or an improvement in absolute clock accuracy. Added execution and recording overhead are apparatus differences.</p>
+<p><a href="evidence.html#availability" class="archive-reference" title="Private archive reference; see data availability">Instruction checks</a> exercise exact arithmetic, ordering and unavailable durations. <a href="evidence.html#availability" class="archive-reference" title="Private archive reference; see data availability">Integrated checks</a> exercise acquisition, unchanged recognition, recording, failure paths and rejected record mutations with supplied counters and device responses. Physical qualification requires the prepared run and its returned records.</p>
+</section>
+</article>
+    <aside class="page-toc" aria-label="Page contents"></aside>
+    </div>
+<footer><span>HYPHOS / SEIGROS</span><p>Silicon foundations &middot; Lab notebook 01</p>
+    <a href="evidence.html#provenance-section">Evidence &amp; provenance &#8599;</a></footer>
+    </main></body></html>
