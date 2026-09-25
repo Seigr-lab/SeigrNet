@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Definitions used in this notebook, linked to their implementation, experimental method and evidence."><title>Concepts & relations | Hyphos &middot; Silicon foundations</title><link rel="stylesheet" href="style.css"><script src="notebook.js" defer></script><link rel="stylesheet" href="../../css/nav.css"><link rel="stylesheet" href="../../css/notebook.css"></head>
+<body class="native-chapter public-notebook" data-chapter="concepts" data-kind="chapter"><div id="header-container" data-base-path="../../">
+<header class="site-header"><a class="site-brand" href="../../index.html"><img src="../../assets/seigr_logo.png" width="44" height="44" alt=""><span>Seigr<small>a continuum of code, sound, and nature</small></span></a>
+<nav class="site-nav" aria-label="Seigr"><a href="../../index.html" aria-current="location">Seigr Lab</a><a href="../../html/insektsreservat.html">Insect Reserve</a><a href="../../html/sound.html">Sound</a><a href="../../html/manifesto.html">Manifesto</a></nav></header></div><a class="skip-link" href="#main">Skip to content</a><aside class="sidebar"><a class="lab-return" href="../../index.html">&larr; Seigr Lab / all projects</a>
+<a class="brand" href="index.html"><img src="brand.svg" width="43" height="43" alt=""><span>HYPHOS<small>SEIGROS RESEARCH</small></span></a>
+<div class="chapter"><span class="eyebrow">LAB NOTEBOOK / 01</span><p>Silicon foundations</p><small>SEIGRASM, electrical states &amp; Hyphos</small></div>
+<details class="chapter-menu" open><summary>Notebook navigation</summary>
+<nav aria-label="Notebook overview"><a data-page="index" href="index.html">Overview</a></nav>
+<p class="nav-label">SEIGRASM &amp; HYPHOS</p><nav aria-label="SEIGRASM and Hyphos">
+<a data-page="concepts" href="concepts.html"><span>01</span>Concepts &amp; relations</a>
+<a data-page="seigrasm" href="seigrasm.html"><span>02</span>SEIGRASM</a>
+<a data-page="silicon" href="silicon.html"><span>03</span>Silicon access</a></nav>
+<p class="nav-label">EXPERIMENTAL RESEARCH</p><nav aria-label="Experimental research">
+<a data-page="experiments" href="experiments.html">Experiments</a>
+<a data-page="evidence" href="evidence.html">Evidence &amp; provenance</a>
+<a data-page="method" href="method.html">Research method</a></nav>
+</details><a class="help-link" href="guide.html">Using this notebook &#8599;</a></aside>
+<main id="main" tabindex="-1"><header class="topbar"><a href="index.html">LAB NOTEBOOK / 01</a><span>CHAPTER 01 / CONCEPTS & RELATIONS</span></header>
+<div class="breadcrumbs"><a href="index.html">Silicon foundations</a><span aria-hidden="true"> / </span><span>Concepts & relations</span></div>
+<section class="hero" aria-labelledby="page-title"><div><p class="eyebrow">CHAPTER 01</p>
+    <h1 id="page-title">Concepts & relations<span>.</span></h1><p>Definitions used in this notebook, linked to their implementation, experimental method and evidence.</p>
+    </div></section>
+<p class="evidence-shortcut"><a href="#experimental-evidence">Supporting experiments and qualification &darr;</a></p><div class="chapter-layout"><article class="chapter-content">
+    <section id="relations" class="panel"><h2>How the pieces connect</h2>
+    <p><a href="#seigrasm">SEIGRASM</a> supplies native execution for <a href="#hyphos">Hyphos</a>; Hyphos is the basis for <a href="#seigros">SeigrOS</a>. <a href="#agnosticism">Capability discovery and verified implementations</a> connect this foundation to available silicon.</p>
+    <div class="signal-path" aria-label="Development relation"><a href="silicon.html">Available silicon</a><b>&rarr;</b><a href="seigrasm.html">SEIGRASM</a><b>&rarr;</b><a href="#hyphos">Hyphos</a><b>&rarr;</b><a href="#seigros">SeigrOS</a></div><p>Physical <a href="#evidence">evidence</a> feeds back into those implementations. The <a href="#seigsit">Seigsit</a> is a carrier within this development; the electrical experiment examines one candidate physical relation.</p>
+    </section>
+    
+    <section id="seigrasm" class="panel"><h2>SEIGRASM</h2>
+    <p>The project&#8217;s custom assembly language, expressed as explicit native instruction encodings. It supplies the execution foundation for controlling silicon and bootstrapping Hyphos. AArch64, x86-64 and RV64IM with Zifencei have distinct instruction streams implementing a common seed contract.</p>
+    <p class="concept-reference"><a href="seigrasm.html#implementations">Implementations and native images &rarr;</a></p>
+    </section>
+    
+    <section id="hyphos" class="panel"><h2>Hyphos</h2>
+    <p>The language being developed as the native basis of SeigrOS. The unfinished core code provides capability and semantic references. Elementary behavior is implemented and physically tested through SEIGRASM as that language is consolidated. The present electrical payload does not establish Hyphos-made Seigsit creation.</p>
+    <p class="concept-reference"><a href="seigrasm.html#hyphos">Bootstrap integration &rarr;</a></p>
+    </section>
+    
+    <section id="seigros" class="panel"><h2>SeigrOS</h2>
+    <p>The operating system to be built using Hyphos. The minimal physical apparatus is a testing ground for its foundation. A returned electrical record qualifies only the operations it observes; it does not establish a complete SeigrOS installation.</p>
+    <p class="concept-reference"><a href="silicon.html">Silicon access and dependencies &rarr;</a></p>
+    </section>
+    
+    <section id="agnosticism" class="panel"><h2>Agnosticism</h2>
+    <p>A common Hyphos capability is realized using the resources available on a silicon cluster, within their technical limits. Discovery and verified implementations connect that capability to particular instruction sets and component interfaces. A common contract does not require identical physical opcodes.</p>
+    <p class="concept-reference"><a href="silicon.html#firmware">Replacement mechanisms &rarr;</a></p>
+    </section>
+    
+    <section id="senary" class="panel"><h2>Senary</h2>
+    <p>Base six is the default numerical notation in SEIGRASM. Unprefixed digits use 0 through 5; explicit prefixes select other bases. Notation, in-memory transport and physical electrical state count are separate properties to specify and test.</p>
+    <p class="concept-reference"><a href="seigrasm.html#contract">Senary execution contract &rarr;</a></p>
+    </section>
+    
+    <section id="electrical-state" class="panel"><h2>Electrical state</h2>
+    <p>In the six/sixteen-state comparison, a requested control setting paired with an observed raw ADC response. Six or sixteen such states are proposed over the same control interval. Recognition depends on the observed response and frozen training bands. Physical state count does not determine the CPU&#8217;s instruction representation.</p>
+    <p class="concept-reference"><a href="electrical.html#method">Six/sixteen-state method &rarr;</a></p>
+    </section>
+    
+    <section id="seigsit" class="panel"><h2>Seigsit</h2>
+    <p>The layered carrier to be created and used by Hyphos. Creation precedes the availability of all content; its layers can subsequently carry different kinds of information, including Hyphos when required. The electrical experiments do not define its complete layout or equate its number of layers with a voltage cardinality.</p>
+    <p class="concept-reference"><a href="seigrasm.html#hyphos">Relation to bootstrap &rarr;</a></p>
+    </section>
+    
+    <section id="firmware" class="panel"><h2>Firmware</h2>
+    <p>Executable software that initializes or controls a processor or component. Replacement requires an established execution and loading interface. Direct register control can replace a firmware-mediated operation without replacing the component&#8217;s or board&#8217;s boot code. Fixed ROM, writable executable storage and control registers require different investigations.</p>
+    <p class="concept-reference"><a href="silicon.html#firmware">Firmware replacement &rarr;</a></p>
+    </section>
+    
+    <section id="calibration" class="panel"><h2>Calibration & recognition</h2>
+    <p>The current procedure builds each state&#8217;s closed band from its training minimum and maximum plus a declared two-count guard. Bands must be disjoint before validation begins. Recognition receives the raw observation and frozen bands, independently of the requested state. This procedure is not an absolute voltage calibration.</p>
+    <p class="concept-reference"><a href="electrical.html#observations">Training intervals and recognition results &rarr;</a></p>
+    </section>
+    
+    <section id="journal" class="panel"><h2>Native journal</h2>
+    <p>SGDATA01 is the current reserved-sector recording format. Native SEIGRASM encodes numeric fields as senary digits, adds run identity and integrity checks, writes the SD sector and reads it back. A PC reader verifies preserved copies. The raw journal requires no target filesystem.</p>
+    <p class="concept-reference"><a href="electrical.html#evidence">Returned journal and integrity &rarr;</a></p>
+    </section>
+    
+    <section id="evidence" class="panel"><h2>Evidence & qualification</h2>
+    <p>Raw returned bytes are retained separately from interpretation. Supplied-input execution tests establish bounded software behavior; physical records establish the observations they contain. A failure, unresolved classification or unattempted step remains part of the result.</p>
+    <p class="concept-reference"><a href="evidence.html#provenance-section">Verification and provenance &rarr;</a></p>
+    </section>
+    <section id="experimental-evidence" class="panel evidence-map"><h2>Experimental evidence for these concepts</h2><p>Definitions describe the intended relations. Physical qualification is limited to the operations observed in the linked records.</p><dl class="claim-links"><dt>Electrical states and recognition</dt><dd><a href="electrical.html#results">Six/sixteen-state comparison</a>: six-state training separated the bands; sixteen-state training overlapped. Six-state validation still included wrong and unresolved classifications.</dd><dt>Calibration under repeated acquisition</dt><dd><a href="stability.html#results">Six-state stability</a>: all six blocks calibrated, with 28 unresolved held-out readings. <a href="repeatability.html#results">Fixed-delay repeatability, three boots</a>: runs 1 and 2 had fewer late failures; run 3 rejected its first calibration, leaving 432 held-out classifications unavailable. The primary recurrence criterion is not established.</dd><dt>Native journal</dt><dd><a href="stability.html#evidence">Recovered sectors and integrity checks</a> establish recoverable records for the installed candidate.</dd><dt>Hyphos, SeigrOS and Seigsit</dt><dd>These electrical records do not establish a complete SeigrOS or Hyphos-made Seigsit. <a href="seigrasm.html#hyphos">Bootstrap integration</a> defines the remaining boundary.</dd></dl></section>
+<section class="related panel"><h2>Continue reading</h2>
+    <div class="artifact-links"><a href="seigrasm.html">SEIGRASM &rarr;</a><a href="experiments.html">Experimental records</a></div></section>
+    </article>
+    <aside class="page-toc" aria-label="Page contents"></aside>
+    </div>
+<footer><span>HYPHOS / SEIGROS</span><p>Silicon foundations &middot; Lab notebook 01</p>
+    <a href="evidence.html#provenance-section">Evidence &amp; provenance &#8599;</a></footer>
+    </main></body></html>

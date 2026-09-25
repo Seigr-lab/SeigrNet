@@ -5,3 +5,5 @@ __pycache__/
 
 # Ignore all .instructions.md files
 *.instructions.md
+# Local browser validation output
+tools/out/
