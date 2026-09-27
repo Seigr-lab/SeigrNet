@@ -1,8 +1,8 @@
 {
   "format": 1,
   "notebook": "Silicon foundations",
-  "snapshot_at": "2026-09-27T03:14:06+00:00",
-  "source_fingerprint": "9de569a5ad7dcaf1a9264f089fa204c6ee81f34ebe1d284a8178110b60f5b241",
+  "snapshot_at": "2026-09-27T05:34:36+00:00",
+  "source_fingerprint": "f8786f1259197ec4bc1bcd823e3001c246230fd296cf90dc090247dbd03d39c6",
   "files": {
     "adaptive.html": {
       "bytes": 44116,
@@ -36,9 +36,13 @@
       "bytes": 11556,
       "sha256": "a64e601c91451e0a5042cb9af6da080aed6b25cdfa94cfd621cbbe32cf5d9556"
     },
+    "consistency.html": {
+      "bytes": 21539,
+      "sha256": "946d2dce661d30084170f52478c3faea9ab8332a2328c1e3e7c383f38883a5af"
+    },
     "data.js": {
-      "bytes": 13205,
-      "sha256": "0164c9d4ccde0ba87d15872e6aead144356d8e0eb0d9765494898c41f4817dac"
+      "bytes": 13721,
+      "sha256": "e6637f18ef0856b13d4360176664b23182056269ffdea5704f63bc14dcf08412"
     },
     "descent.html": {
       "bytes": 21759,
@@ -57,8 +61,8 @@
       "sha256": "6ec7ba9197e81bad7959c156d34a7e58a9640f1849c0ba98e998b0d3f6a1095f"
     },
     "experiments.html": {
-      "bytes": 15673,
-      "sha256": "b55a47adb97ec7f45b9c00f702f25bd8286e6cf0c40c5c0ba41fd0a2d21a6439"
+      "bytes": 16026,
+      "sha256": "15c028b4393533ea8d87866e6d9075a466440e8ee9fec1e1f13b4ac79e576cca"
     },
     "figures/074c65e272d0a45f-recognition.svg": {
       "bytes": 108093,
@@ -75,6 +79,10 @@
     "figures/141d2422277c2c07-chronology.svg": {
       "bytes": 115554,
       "sha256": "141d2422277c2c079460e11815a92cdf1cde9f29f3dc5023a9f0e7c2e2b2c92a"
+    },
+    "figures/21b9146e54581943-excursions.svg": {
+      "bytes": 31402,
+      "sha256": "21b9146e5458194392b45df6c3d62d3b1636b4da9a6a53ffb205492bad473bc2"
     },
     "figures/22c05d849e805288-held-coverage.svg": {
       "bytes": 728981,
@@ -237,8 +245,8 @@
       "sha256": "ba72d056f43f38ca70ceea768bfcb938090fb94dffe84df1bcdbfa5e641233ca"
     },
     "index.html": {
-      "bytes": 17667,
-      "sha256": "529f89206d0948163b0794bf31b8262ade290e5f0787260f281ec0fc2f2bd235"
+      "bytes": 18336,
+      "sha256": "dd145975db9365906a247ef73822661dfc61ca0c2031ab73197be9af30e5b323"
     },
     "interleave.html": {
       "bytes": 37000,
