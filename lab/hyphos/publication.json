@@ -1,8 +1,8 @@
 {
   "format": 1,
   "notebook": "Silicon foundations",
-  "snapshot_at": "2026-09-28T08:56:31+00:00",
-  "source_fingerprint": "9abf88861f84c9c5949d5c042135546a0cb983a0b309e9e71c577d8f4b7e76d1",
+  "snapshot_at": "2026-09-28T09:51:16+00:00",
+  "source_fingerprint": "ef332c761711f62ca46466ce7c15fcc692880a587df936ae66b7b9e2c0879f11",
   "files": {
     "adaptive.html": {
       "bytes": 44116,
@@ -41,12 +41,12 @@
       "sha256": "c2f18dab373bb90a9af9a02761501739709b21ed59b2d0f0fc788fc18a309b0c"
     },
     "creation.html": {
-      "bytes": 66502,
-      "sha256": "24b691495c4625f533b00afc5675c3bc88cb524e865605fb0ef58439d6c86d00"
+      "bytes": 76721,
+      "sha256": "3c5dac5b6e4fee90aed9aac7d527d3324b02f1d59d550b614c8aded73c4dfaf5"
     },
     "data.js": {
-      "bytes": 19832,
-      "sha256": "e9e7fba39b0aaa2c4fc5412f3f7bf5f706c6e102752e101ed891265b7ed8af16"
+      "bytes": 20743,
+      "sha256": "e4c53c3c3652252607bbce8e3c7ad747d62b39ed5f614cec55202787009740a9"
     },
     "descent.html": {
       "bytes": 21759,
@@ -216,6 +216,10 @@
       "bytes": 68000,
       "sha256": "c7689ee40c02353cec91ed51c6c73b1a22de4d757a7ac004a9030985cee632e1"
     },
+    "figures/cc74e930582314ff-burst-trajectories.svg": {
+      "bytes": 40242,
+      "sha256": "cc74e930582314ff599afe39d7784ef3f410ee766146cc92b8f89eb0b2647f23"
+    },
     "figures/cdea054e5784773f-reference-gaps.svg": {
       "bytes": 45361,
       "sha256": "cdea054e5784773fb4bfed84a4bf31b60373d691be240441a58c2c81df0a061b"
@@ -289,8 +293,8 @@
       "sha256": "ba72d056f43f38ca70ceea768bfcb938090fb94dffe84df1bcdbfa5e641233ca"
     },
     "index.html": {
-      "bytes": 21288,
-      "sha256": "8a12c8f8d993a67cc13a668b259b7db53855949edf6d8ee2ad62fec1ca5ec675"
+      "bytes": 21779,
+      "sha256": "44eaf0e925efd27712d23ac042e3a84eb20d824af5cddd20818a86b620b40722"
     },
     "interleave.html": {
       "bytes": 37000,
@@ -337,8 +341,8 @@
       "sha256": "3226610f6968bb591295921b95c42b6d38ac38ec6541126c6191a9f799ee98ae"
     },
     "seigrasm.html": {
-      "bytes": 46990,
-      "sha256": "facc50dc4641a8c3c77b7f92f2f2ee76d55b3f5208e981cfcd24c316ea1320bb"
+      "bytes": 47477,
+      "sha256": "d37f7864b76eb2b8629928c5014a2efed1b0ed9fe3f44566e1747c2f564a1dba"
     },
     "separation.html": {
       "bytes": 40155,
