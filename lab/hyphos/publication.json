@@ -1,8 +1,8 @@
 {
   "format": 1,
   "notebook": "Silicon foundations",
-  "snapshot_at": "2026-09-29T07:11:06+00:00",
-  "source_fingerprint": "643bb5d274fd76ba3fbbb90ecb742b2e1cf96d9852fddc2a9277965819d4c4c6",
+  "snapshot_at": "2026-09-29T15:58:45+00:00",
+  "source_fingerprint": "06b56316c869e31045c9fd6d278a02f89e6dd71d9debe1e17802551cf0899041",
   "files": {
     "adaptive.html": {
       "bytes": 44116,
@@ -41,12 +41,12 @@
       "sha256": "c2f18dab373bb90a9af9a02761501739709b21ed59b2d0f0fc788fc18a309b0c"
     },
     "creation.html": {
-      "bytes": 171661,
-      "sha256": "beb9f3cecb7a0dd4524d7bf12b912f11841f893f118ad74c9f85996bee8094b2"
+      "bytes": 186960,
+      "sha256": "8eeda7315667c304efce6b99d3db6cb973de41caed98aa090aa9723e837c8e3d"
     },
     "data.js": {
-      "bytes": 27842,
-      "sha256": "31760d7a3974419fb6e3df8e155336570a62b25abb9f2729b661196bc3c8c425"
+      "bytes": 28733,
+      "sha256": "1d83176360299a2c73a85de4778a31f72d98f49d32117b6140ee9ee85c67bf9c"
     },
     "descent.html": {
       "bytes": 21759,
@@ -293,8 +293,8 @@
       "sha256": "ba72d056f43f38ca70ceea768bfcb938090fb94dffe84df1bcdbfa5e641233ca"
     },
     "index.html": {
-      "bytes": 23702,
-      "sha256": "edfb74042057e70978c2fd62441c7750f0b8f8bae3d2de22e586fbfed7a30060"
+      "bytes": 24309,
+      "sha256": "65a0ebc9e4f4a175b23692fab83b60d6d72d34623d2a736dbff42bba7d87c859"
     },
     "interleave.html": {
       "bytes": 37000,
@@ -341,8 +341,8 @@
       "sha256": "3226610f6968bb591295921b95c42b6d38ac38ec6541126c6191a9f799ee98ae"
     },
     "seigrasm.html": {
-      "bytes": 50097,
-      "sha256": "2e193b31059e7b9e242bbed55a618b0bfd6b7db0ca647e569357cf77bb11d2b6"
+      "bytes": 51580,
+      "sha256": "be234b4dced6a04ec404b923994c2bc8ce92c54a2ea6ca099da0dbe13797d789"
     },
     "separation.html": {
       "bytes": 40155,
