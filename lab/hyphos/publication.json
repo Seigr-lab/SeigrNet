@@ -1,8 +1,8 @@
 {
   "format": 1,
   "notebook": "Silicon foundations",
-  "snapshot_at": "2026-09-30T14:17:46+00:00",
-  "source_fingerprint": "2ad2f981c082381a2ac659325391219421fd2677ce42907b822a09b29dc1ae93",
+  "snapshot_at": "2026-09-30T16:17:52+00:00",
+  "source_fingerprint": "233f9af6dae28406691db5522b9a1112b237d9ad0b436dd425a73ce9ac2c2b9e",
   "files": {
     "adaptive.html": {
       "bytes": 44116,
@@ -41,12 +41,12 @@
       "sha256": "c2f18dab373bb90a9af9a02761501739709b21ed59b2d0f0fc788fc18a309b0c"
     },
     "creation.html": {
-      "bytes": 290964,
-      "sha256": "e0b0e84fcd93421e3a54b1a2b2e969b29458c8d16fd4546c2b038aef942df3be"
+      "bytes": 308464,
+      "sha256": "79d7c263a8e5f960884b077a03d13f2965c5e1af4216c5ff9f40349801a3796a"
     },
     "data.js": {
-      "bytes": 36236,
-      "sha256": "46a5c20b936fa040c02125cdc41fc58812918864b1dc5d214d913fe9d36d9610"
+      "bytes": 37137,
+      "sha256": "177afde56385ad41cbcfbb558ea77598b11420e06e60285ed1fb6ae139fdad2e"
     },
     "descent.html": {
       "bytes": 21759,
@@ -119,6 +119,10 @@
     "figures/2f5638bef7b1c923-margins.svg": {
       "bytes": 265901,
       "sha256": "2f5638bef7b1c92338d09eab007c7b6fb3e179b993cbc9b6a482c616243ac8f8"
+    },
+    "figures/3094278557f255e8-history-exception-1175.svg": {
+      "bytes": 16182,
+      "sha256": "3094278557f255e8e85bcd34d2591c24c87a6305fb599974e6caeb1c766ae340"
     },
     "figures/326939603668536b-margins.svg": {
       "bytes": 70828,
@@ -259,6 +263,10 @@
     "figures/e224b5f7c0402873-timing.svg": {
       "bytes": 624998,
       "sha256": "e224b5f7c0402873cfbee17ab994e6021da3e95e57f71eb47c66611f892b70c7"
+    },
+    "figures/e424309643d8e218-history-margins.svg": {
+      "bytes": 46500,
+      "sha256": "e424309643d8e2183b1eb57f36717cd11cf85ebf93e64f4a0018ad1913cd774a"
     },
     "figures/e7df13a35048498a-reference-gaps.svg": {
       "bytes": 45852,
