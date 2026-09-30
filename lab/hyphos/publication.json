@@ -1,8 +1,8 @@
 {
   "format": 1,
   "notebook": "Silicon foundations",
-  "snapshot_at": "2026-09-30T07:07:22+00:00",
-  "source_fingerprint": "3d5a24171d65d7f58b7b19e46d9095b7cf495dda3b78cd2aa97b35c6fcb5cac4",
+  "snapshot_at": "2026-09-30T10:10:02+00:00",
+  "source_fingerprint": "ab93fc1bd35473f456c5cce61d582731de4a75b83a584f51759339809a01ea06",
   "files": {
     "adaptive.html": {
       "bytes": 44116,
@@ -41,12 +41,12 @@
       "sha256": "c2f18dab373bb90a9af9a02761501739709b21ed59b2d0f0fc788fc18a309b0c"
     },
     "creation.html": {
-      "bytes": 250183,
-      "sha256": "d05d05b350e26b583860b04636dec975906cda3539d19e296bda891d962387ec"
+      "bytes": 262162,
+      "sha256": "baa565272b731a0f17915d1c9f3cdb1654eabaf83f97e23a89d5fd329e4db348"
     },
     "data.js": {
-      "bytes": 33654,
-      "sha256": "e3f22f9d25cc0b04222ea3cfe5868a2afff509972fe35e473bf751b0769e2c5f"
+      "bytes": 34520,
+      "sha256": "11d760865c53002dec9c52dd4ecea2a54ef64d68a1e171d298fcac42ad9a4521"
     },
     "descent.html": {
       "bytes": 21759,
