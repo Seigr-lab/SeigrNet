@@ -1,8 +1,8 @@
 {
   "format": 1,
   "notebook": "Silicon foundations",
-  "snapshot_at": "2026-09-30T16:17:52+00:00",
-  "source_fingerprint": "233f9af6dae28406691db5522b9a1112b237d9ad0b436dd425a73ce9ac2c2b9e",
+  "snapshot_at": "2026-09-30T18:11:39+00:00",
+  "source_fingerprint": "7a80e55eebc01608830c80adbbddfb3a0334d9c04634a41a5f7c68a4fb845c70",
   "files": {
     "adaptive.html": {
       "bytes": 44116,
@@ -41,12 +41,12 @@
       "sha256": "c2f18dab373bb90a9af9a02761501739709b21ed59b2d0f0fc788fc18a309b0c"
     },
     "creation.html": {
-      "bytes": 308464,
-      "sha256": "79d7c263a8e5f960884b077a03d13f2965c5e1af4216c5ff9f40349801a3796a"
+      "bytes": 325036,
+      "sha256": "891a6bf797ee85ad6e47b50f5181706b18c5348f00ac9d6955433ba98d7c14da"
     },
     "data.js": {
-      "bytes": 37137,
-      "sha256": "177afde56385ad41cbcfbb558ea77598b11420e06e60285ed1fb6ae139fdad2e"
+      "bytes": 38000,
+      "sha256": "410683bfd06f6babfd485b1a822e9a3f3f6e470d8bd115af924c092f0e27cb72"
     },
     "descent.html": {
       "bytes": 21759,
@@ -144,6 +144,10 @@
       "bytes": 59607,
       "sha256": "4a053d5db7019e76a86a87c2695e981cca5a9969dbe51e1e9a1a8ba7f3fed12f"
     },
+    "figures/553e97a1c9fd87e0-step-exception-3.svg": {
+      "bytes": 20031,
+      "sha256": "553e97a1c9fd87e0f2572e9444a6fad2178967120e6db1ca5a71ece6f3f4d579"
+    },
     "figures/56c0ccfc8425573c-pairs.svg": {
       "bytes": 114592,
       "sha256": "56c0ccfc8425573c7cc37b850ed3e3e4cd23a145f91109961052e51464ccbdd3"
@@ -159,6 +163,10 @@
     "figures/60c637258e8b5fc7-trajectories.svg": {
       "bytes": 260962,
       "sha256": "60c637258e8b5fc78a10d5b7b89f75d2f729c4321b241bcd36934b263fc0b781"
+    },
+    "figures/62c902f9a8f3c4cc-step-margins.svg": {
+      "bytes": 40902,
+      "sha256": "62c902f9a8f3c4ccfcadd9ae72f010512045d386c934d47459a0311076c9a26a"
     },
     "figures/653fd9daab5af021-held-sequences.svg": {
       "bytes": 169013,
