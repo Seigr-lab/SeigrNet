@@ -1,8 +1,8 @@
 {
   "format": 1,
   "notebook": "Silicon foundations",
-  "snapshot_at": "2026-10-01T06:53:12+00:00",
-  "source_fingerprint": "c9f201b9279e86281d743a6e52c1f7d0e2bfa357017d00313a6d8ff4ab1e1c76",
+  "snapshot_at": "2026-10-01T09:08:24+00:00",
+  "source_fingerprint": "132680fc2822ec5a9f687f6579a772e684d90656b3a628943a5d3401d81e3357",
   "files": {
     "adaptive.html": {
       "bytes": 44116,
@@ -41,12 +41,12 @@
       "sha256": "c2f18dab373bb90a9af9a02761501739709b21ed59b2d0f0fc788fc18a309b0c"
     },
     "creation.html": {
-      "bytes": 335146,
-      "sha256": "1675b646045457753eb5fe5b6faee334438403ee553b9b8a22b7ad653bf37c60"
+      "bytes": 354202,
+      "sha256": "c2762eceb94a5363329d455a908eccf1e8057810ae1a1af5bb182298bbdc4cbe"
     },
     "data.js": {
-      "bytes": 38907,
-      "sha256": "f5f66cb85d42d787344c214369e77ce31220a264aef6e7ce95af279373ba65aa"
+      "bytes": 39890,
+      "sha256": "8f7054842f2c72c48b8117f209c591d3f4b993c6c92400a87c9737875f5ae5a4"
     },
     "descent.html": {
       "bytes": 21759,
@@ -168,6 +168,10 @@
       "bytes": 252389,
       "sha256": "5cb0d8b0941663b57c537aa868e8da2cef628438b4154c94719bb4c50fc3eb37"
     },
+    "figures/603bea89f986b71b-activity-exception-5.svg": {
+      "bytes": 19410,
+      "sha256": "603bea89f986b71b0c3e395c43a46d7dd580096cab99d65c2e6e3a82f88934d7"
+    },
     "figures/60c637258e8b5fc7-trajectories.svg": {
       "bytes": 260962,
       "sha256": "60c637258e8b5fc78a10d5b7b89f75d2f729c4321b241bcd36934b263fc0b781"
@@ -195,6 +199,14 @@
     "figures/6fd470dc09c8092a-median-bands.svg": {
       "bytes": 329791,
       "sha256": "6fd470dc09c8092adb6cea3940848ea1ac3c477e901853cce2d73ace9826772e"
+    },
+    "figures/816c76b31fa5bc54-activity-exception-0.svg": {
+      "bytes": 20205,
+      "sha256": "816c76b31fa5bc542033df1f8b1f59ab766a149fbc5bce34bbecb330987fdec3"
+    },
+    "figures/82fa176c11cb7cc3-activity-margins-0.svg": {
+      "bytes": 37393,
+      "sha256": "82fa176c11cb7cc358509f59ba44336b9fa5a4248a8571217f50e6d56cad0683"
     },
     "figures/8e3e4e949f7f4ba4-chronology.svg": {
       "bytes": 412341,
@@ -279,6 +291,10 @@
     "figures/e224b5f7c0402873-timing.svg": {
       "bytes": 624998,
       "sha256": "e224b5f7c0402873cfbee17ab994e6021da3e95e57f71eb47c66611f892b70c7"
+    },
+    "figures/e353860b20e36b74-activity-margins-1.svg": {
+      "bytes": 37408,
+      "sha256": "e353860b20e36b74dd2290d5ff58b77720f9e056c62f6e8a07406c9b56c67cf7"
     },
     "figures/e424309643d8e218-history-margins.svg": {
       "bytes": 46500,
