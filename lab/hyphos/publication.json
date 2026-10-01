@@ -1,8 +1,8 @@
 {
   "format": 1,
   "notebook": "Silicon foundations",
-  "snapshot_at": "2026-09-30T18:11:39+00:00",
-  "source_fingerprint": "7a80e55eebc01608830c80adbbddfb3a0334d9c04634a41a5f7c68a4fb845c70",
+  "snapshot_at": "2026-10-01T06:53:12+00:00",
+  "source_fingerprint": "c9f201b9279e86281d743a6e52c1f7d0e2bfa357017d00313a6d8ff4ab1e1c76",
   "files": {
     "adaptive.html": {
       "bytes": 44116,
@@ -41,12 +41,12 @@
       "sha256": "c2f18dab373bb90a9af9a02761501739709b21ed59b2d0f0fc788fc18a309b0c"
     },
     "creation.html": {
-      "bytes": 325036,
-      "sha256": "891a6bf797ee85ad6e47b50f5181706b18c5348f00ac9d6955433ba98d7c14da"
+      "bytes": 335146,
+      "sha256": "1675b646045457753eb5fe5b6faee334438403ee553b9b8a22b7ad653bf37c60"
     },
     "data.js": {
-      "bytes": 38000,
-      "sha256": "410683bfd06f6babfd485b1a822e9a3f3f6e470d8bd115af924c092f0e27cb72"
+      "bytes": 38907,
+      "sha256": "f5f66cb85d42d787344c214369e77ce31220a264aef6e7ce95af279373ba65aa"
     },
     "descent.html": {
       "bytes": 21759,
@@ -96,6 +96,10 @@
       "bytes": 337232,
       "sha256": "117b4a973feff93e585cf7a40a20936ef125006a66b03916a69d7c248ac3f763"
     },
+    "figures/13daabf7688cbec9-step-margins.svg": {
+      "bytes": 40896,
+      "sha256": "13daabf7688cbec9f0028edd274d562c27d2ff6191802d146ee1a25c16a61c1d"
+    },
     "figures/141d2422277c2c07-chronology.svg": {
       "bytes": 115554,
       "sha256": "141d2422277c2c079460e11815a92cdf1cde9f29f3dc5023a9f0e7c2e2b2c92a"
@@ -135,6 +139,10 @@
     "figures/3bb62a0298eb7c7b-coverage.svg": {
       "bytes": 35579,
       "sha256": "3bb62a0298eb7c7b123428cb9bb975afd6693a7899549f8ba09b1d668d456733"
+    },
+    "figures/415731f5d5e27fee-step-primary-1802.svg": {
+      "bytes": 20678,
+      "sha256": "415731f5d5e27feed2232688e071bf3af64b468917557c12088e9c61877c6b3a"
     },
     "figures/4177a346b02363f8-recognition.svg": {
       "bytes": 108893,
