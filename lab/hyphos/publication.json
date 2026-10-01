@@ -1,8 +1,8 @@
 {
   "format": 1,
   "notebook": "Silicon foundations",
-  "snapshot_at": "2026-10-01T11:48:17+00:00",
-  "source_fingerprint": "82e1f43d7aeac5f69dad4f19683d60e7b5dcadb8c6c5d91f273a2eb8d7107649",
+  "snapshot_at": "2026-10-01T14:42:21+00:00",
+  "source_fingerprint": "52f196feafa77d88e5b43d56bc581f8b0560bc5e60704b9fe4358216211947bb",
   "files": {
     "adaptive.html": {
       "bytes": 44116,
@@ -45,8 +45,8 @@
       "sha256": "c2762eceb94a5363329d455a908eccf1e8057810ae1a1af5bb182298bbdc4cbe"
     },
     "data.js": {
-      "bytes": 41611,
-      "sha256": "a3033d0393bef7963cba7e5f4717cced645907a3e6b7dbb743bdaacc72158018"
+      "bytes": 42544,
+      "sha256": "4b99f7ded053fa557358c6008a391e76af32bc0dac03f8de0ade5e633c9bcc83"
     },
     "descent.html": {
       "bytes": 21759,
@@ -87,6 +87,10 @@
     "figures/08b6042d883ae6d5-trajectory-32.svg": {
       "bytes": 20805,
       "sha256": "08b6042d883ae6d51980028114d4bdc98f69f86590db675d599ec678957fe8e8"
+    },
+    "figures/09bea60ef459ca4c-replicate-bounds.svg": {
+      "bytes": 38371,
+      "sha256": "09bea60ef459ca4ce23a0d8992fe09e3b9f40f9d5be5cec5c0225a6dc2b650a8"
     },
     "figures/0a39ecf2d06fbe26-boundary-margins.svg": {
       "bytes": 58006,
@@ -240,6 +244,10 @@
       "bytes": 38066,
       "sha256": "ab5bfffe7496392966d47d9c0127370d86bbfd4a836c29b656c281240f8f9759"
     },
+    "figures/ada5ee172f79b531-replicate-excursions.svg": {
+      "bytes": 45613,
+      "sha256": "ada5ee172f79b5313b704d7a780f0d4e727f71daa005ab10fc8e5996ec22a3dd"
+    },
     "figures/b109997d2397b6bf-training-bands.svg": {
       "bytes": 82200,
       "sha256": "b109997d2397b6bf09d84ee8fcff4fce4aaa246b40b9f2d6ba83c9febf575560"
@@ -361,8 +369,8 @@
       "sha256": "ba72d056f43f38ca70ceea768bfcb938090fb94dffe84df1bcdbfa5e641233ca"
     },
     "index.html": {
-      "bytes": 24558,
-      "sha256": "5ad8c654bd8eb4aee8bb4a3f678cbcb091448347fe363496ba6b97a440dfda85"
+      "bytes": 24563,
+      "sha256": "372fc4e184c14617ba9ef6980b4bf2ab9f4de4c2f907beacaeeb6fe520e6c2b5"
     },
     "interleave.html": {
       "bytes": 37000,
@@ -373,8 +381,8 @@
       "sha256": "4c8b503ebe7428fae48bf8f5b0b3c0984cc358086eee8f64929d3c72282bc156"
     },
     "mapping.html": {
-      "bytes": 23713,
-      "sha256": "4742a5e4c10ef067591e558301e39aea43127dd250af8f70409fb3007dbb7092"
+      "bytes": 23818,
+      "sha256": "bb61416d7c6e3a3367acab6c3c75ed1c8b409dd9c9901f13b2bc15581c146a2d"
     },
     "method.html": {
       "bytes": 7839,
@@ -403,6 +411,10 @@
     "repeatability.html": {
       "bytes": 38096,
       "sha256": "28a5e8de74e2c7e887c361b0552b346657c2cb688f121803790f899561b624d1"
+    },
+    "replicate.html": {
+      "bytes": 23515,
+      "sha256": "13252bafe3bffde1ee3aa11f7c6e1be959d58a2fe31d7c6ed6c26435a6afa778"
     },
     "response.html": {
       "bytes": 28223,
