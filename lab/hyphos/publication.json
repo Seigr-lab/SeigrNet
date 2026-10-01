@@ -1,8 +1,8 @@
 {
   "format": 1,
   "notebook": "Silicon foundations",
-  "snapshot_at": "2026-10-01T09:08:24+00:00",
-  "source_fingerprint": "132680fc2822ec5a9f687f6579a772e684d90656b3a628943a5d3401d81e3357",
+  "snapshot_at": "2026-10-01T10:30:23+00:00",
+  "source_fingerprint": "0b719cb0a62447798e8867e4729ff5efb7f89f132c19096a791cdf6316ad1ec5",
   "files": {
     "adaptive.html": {
       "bytes": 44116,
@@ -45,8 +45,8 @@
       "sha256": "c2762eceb94a5363329d455a908eccf1e8057810ae1a1af5bb182298bbdc4cbe"
     },
     "data.js": {
-      "bytes": 39890,
-      "sha256": "8f7054842f2c72c48b8117f209c591d3f4b993c6c92400a87c9737875f5ae5a4"
+      "bytes": 40742,
+      "sha256": "6031bf774f2e6b55fc488ceff373debac988350515458022f40a0a9f372bb672"
     },
     "descent.html": {
       "bytes": 21759,
@@ -228,9 +228,17 @@
       "bytes": 40278,
       "sha256": "98265adae2cbf663591e939878ee0bec2cac6d6411ddbfb680c4bca26088e229"
     },
+    "figures/ab5bfffe74963929-focus-excursions.svg": {
+      "bytes": 38066,
+      "sha256": "ab5bfffe7496392966d47d9c0127370d86bbfd4a836c29b656c281240f8f9759"
+    },
     "figures/b109997d2397b6bf-training-bands.svg": {
       "bytes": 82200,
       "sha256": "b109997d2397b6bf09d84ee8fcff4fce4aaa246b40b9f2d6ba83c9febf575560"
+    },
+    "figures/b4eb39daaf84ec63-focus-medians.svg": {
+      "bytes": 45105,
+      "sha256": "b4eb39daaf84ec6374c90021ceb90d5afa91955e92db356d317ff5ef98892ae6"
     },
     "figures/bc97e2700b8b03a3-reference-order-gaps.svg": {
       "bytes": 3026,
@@ -323,6 +331,10 @@
     "figures/ff6cc3267a74c6d4-trajectories.svg": {
       "bytes": 248077,
       "sha256": "ff6cc3267a74c6d4f02edc9ba85507e7a775a94f541f75ca2610e10eb60ca577"
+    },
+    "focus.html": {
+      "bytes": 20479,
+      "sha256": "205e31919264f8ded955b18d2cd0ac3b8084019593b9cda630424706c00d7da6"
     },
     "frequency.html": {
       "bytes": 23218,
