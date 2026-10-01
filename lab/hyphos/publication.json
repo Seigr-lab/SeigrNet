@@ -1,8 +1,8 @@
 {
   "format": 1,
   "notebook": "Silicon foundations",
-  "snapshot_at": "2026-10-01T10:30:23+00:00",
-  "source_fingerprint": "0b719cb0a62447798e8867e4729ff5efb7f89f132c19096a791cdf6316ad1ec5",
+  "snapshot_at": "2026-10-01T11:48:17+00:00",
+  "source_fingerprint": "82e1f43d7aeac5f69dad4f19683d60e7b5dcadb8c6c5d91f273a2eb8d7107649",
   "files": {
     "adaptive.html": {
       "bytes": 44116,
@@ -45,8 +45,8 @@
       "sha256": "c2762eceb94a5363329d455a908eccf1e8057810ae1a1af5bb182298bbdc4cbe"
     },
     "data.js": {
-      "bytes": 40742,
-      "sha256": "6031bf774f2e6b55fc488ceff373debac988350515458022f40a0a9f372bb672"
+      "bytes": 41611,
+      "sha256": "a3033d0393bef7963cba7e5f4717cced645907a3e6b7dbb743bdaacc72158018"
     },
     "descent.html": {
       "bytes": 21759,
@@ -65,8 +65,8 @@
       "sha256": "6ec7ba9197e81bad7959c156d34a7e58a9640f1849c0ba98e998b0d3f6a1095f"
     },
     "experiments.html": {
-      "bytes": 16483,
-      "sha256": "df5772e322d30a8343a96b050ba50038255ff549afd9d132bd08df92f95f388b"
+      "bytes": 16862,
+      "sha256": "897bf10f8fddd41aac37fa23ab19c2dcea03864966152441225c612090095861"
     },
     "figures/000e3f808887aecc-reference-gaps.svg": {
       "bytes": 45131,
@@ -152,6 +152,10 @@
       "bytes": 59607,
       "sha256": "4a053d5db7019e76a86a87c2695e981cca5a9969dbe51e1e9a1a8ba7f3fed12f"
     },
+    "figures/4ca569fdcc4c04a7-mapping-coverage.svg": {
+      "bytes": 207340,
+      "sha256": "4ca569fdcc4c04a71a228235365a672c3318a5671d2b9134b9a2d9f87766fdc5"
+    },
     "figures/553e97a1c9fd87e0-step-exception-3.svg": {
       "bytes": 20031,
       "sha256": "553e97a1c9fd87e0f2572e9444a6fad2178967120e6db1ca5a71ece6f3f4d579"
@@ -227,6 +231,10 @@
     "figures/98265adae2cbf663-burst-trajectories.svg": {
       "bytes": 40278,
       "sha256": "98265adae2cbf663591e939878ee0bec2cac6d6411ddbfb680c4bca26088e229"
+    },
+    "figures/a8a95fe94070f858-mapping-reference.svg": {
+      "bytes": 47949,
+      "sha256": "a8a95fe94070f85808f1b20202c23f58cb063053bd9d0480395a5015295b2252"
     },
     "figures/ab5bfffe74963929-focus-excursions.svg": {
       "bytes": 38066,
@@ -333,8 +341,8 @@
       "sha256": "ff6cc3267a74c6d4f02edc9ba85507e7a775a94f541f75ca2610e10eb60ca577"
     },
     "focus.html": {
-      "bytes": 20479,
-      "sha256": "205e31919264f8ded955b18d2cd0ac3b8084019593b9cda630424706c00d7da6"
+      "bytes": 20821,
+      "sha256": "de709e3c026eadd5e85af5705ddb7eee432544a1f66cc33c8aeb8776fa871919"
     },
     "frequency.html": {
       "bytes": 23218,
@@ -353,8 +361,8 @@
       "sha256": "ba72d056f43f38ca70ceea768bfcb938090fb94dffe84df1bcdbfa5e641233ca"
     },
     "index.html": {
-      "bytes": 24591,
-      "sha256": "422adf1ab3374ff746e44d5394dded1536fec8ce3b4607b63d40f28e427d219a"
+      "bytes": 24558,
+      "sha256": "5ad8c654bd8eb4aee8bb4a3f678cbcb091448347fe363496ba6b97a440dfda85"
     },
     "interleave.html": {
       "bytes": 37000,
@@ -363,6 +371,10 @@
     "locality.html": {
       "bytes": 35365,
       "sha256": "4c8b503ebe7428fae48bf8f5b0b3c0984cc358086eee8f64929d3c72282bc156"
+    },
+    "mapping.html": {
+      "bytes": 23713,
+      "sha256": "4742a5e4c10ef067591e558301e39aea43127dd250af8f70409fb3007dbb7092"
     },
     "method.html": {
       "bytes": 7839,
