@@ -1,8 +1,8 @@
 {
   "format": 1,
   "notebook": "Silicon foundations",
-  "snapshot_at": "2026-10-02T18:13:09+00:00",
-  "source_fingerprint": "98e6c239b3759a3124d6f212eff4679eb99e5dd79dc005d3faeacd7e5d1da702",
+  "snapshot_at": "2026-10-02T19:35:55+00:00",
+  "source_fingerprint": "1d798d96aedebaa04879db8648dac94de39186bf3c6ad61900be13b67cc3a68e",
   "files": {
     "adaptive.html": {
       "bytes": 44116,
@@ -53,8 +53,8 @@
       "sha256": "c2762eceb94a5363329d455a908eccf1e8057810ae1a1af5bb182298bbdc4cbe"
     },
     "data.js": {
-      "bytes": 50797,
-      "sha256": "c3398302a53b9718a04f2a5a42a5ac665111fc3fd69be89b9e4b0ffaa6710f86"
+      "bytes": 51720,
+      "sha256": "2bd883cd4c44effe329bf4df568b3f241e1d3958490949dbf12fe0bbc4498a6a"
     },
     "descent.html": {
       "bytes": 21759,
@@ -264,6 +264,10 @@
       "bytes": 38066,
       "sha256": "ab5bfffe7496392966d47d9c0127370d86bbfd4a836c29b656c281240f8f9759"
     },
+    "figures/ac4592e03db5e60c-phase-raw.svg": {
+      "bytes": 82334,
+      "sha256": "ac4592e03db5e60c249b8ab4f509b93d695e249b418874295d1112c56b385780"
+    },
     "figures/ada5ee172f79b531-replicate-excursions.svg": {
       "bytes": 45613,
       "sha256": "ada5ee172f79b5313b704d7a780f0d4e727f71daa005ab10fc8e5996ec22a3dd"
@@ -413,8 +417,8 @@
       "sha256": "ba72d056f43f38ca70ceea768bfcb938090fb94dffe84df1bcdbfa5e641233ca"
     },
     "index.html": {
-      "bytes": 24728,
-      "sha256": "f5d0a374423d80975436269e72b6e0018c8a5c285e039f4929fc9b5af688817c"
+      "bytes": 24714,
+      "sha256": "a47220a9894bf1ce960682a2db44059304999f521698068dac7f67fd18d0cee4"
     },
     "interleave.html": {
       "bytes": 37000,
@@ -445,8 +449,8 @@
       "sha256": "9bc812e567a4778414a9c1dddfcdef92654627bb6d563c8ea05d0d800f97663b"
     },
     "phase.html": {
-      "bytes": 24717,
-      "sha256": "303bbfcf90bb796d47483cc752b41f8352ac5f8d83906c50d7e2a8fb84e05d21"
+      "bytes": 40657,
+      "sha256": "937e4bbf3712ff54709c54a78488f16865e2b8d564a4d5e44923a21e98d92815"
     },
     "readout.html": {
       "bytes": 24273,
