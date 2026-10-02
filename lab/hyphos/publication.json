@@ -1,8 +1,8 @@
 {
   "format": 1,
   "notebook": "Silicon foundations",
-  "snapshot_at": "2026-10-02T13:43:23+00:00",
-  "source_fingerprint": "8acec367ab967202f85f82a87fef4e2a4846225891991327d3f8b1ec0c4f231a",
+  "snapshot_at": "2026-10-02T15:05:25+00:00",
+  "source_fingerprint": "b52a5e719ca2048741d56f812543832820af21b06adcff0d70469190293caf14",
   "files": {
     "adaptive.html": {
       "bytes": 44116,
@@ -53,8 +53,8 @@
       "sha256": "c2762eceb94a5363329d455a908eccf1e8057810ae1a1af5bb182298bbdc4cbe"
     },
     "data.js": {
-      "bytes": 47720,
-      "sha256": "46b45c200472c90735344d34a61d0011d637ddff6663a57c4a9b69c68ca6ca52"
+      "bytes": 48743,
+      "sha256": "418b7041080916bc7f5d4471443b104c22150f06c1a25bbd6756e6cfb7091b4d"
     },
     "descent.html": {
       "bytes": 21759,
@@ -171,6 +171,10 @@
     "figures/4ca569fdcc4c04a7-mapping-coverage.svg": {
       "bytes": 207340,
       "sha256": "4ca569fdcc4c04a71a228235365a672c3318a5671d2b9134b9a2d9f87766fdc5"
+    },
+    "figures/546e44d303f3c012-trigger-only-changes.svg": {
+      "bytes": 47169,
+      "sha256": "546e44d303f3c012ce46cd96bf0e217c0fa1ac4f7ecb8e22dee44e58c38d17d2"
     },
     "figures/553e97a1c9fd87e0-step-exception-3.svg": {
       "bytes": 20031,
@@ -401,8 +405,8 @@
       "sha256": "ba72d056f43f38ca70ceea768bfcb938090fb94dffe84df1bcdbfa5e641233ca"
     },
     "index.html": {
-      "bytes": 24716,
-      "sha256": "00229c963f8d4ff34cae75a51db0ec703519452e66d85860e2798bb21a4efb2c"
+      "bytes": 24655,
+      "sha256": "9426397e007f034ea08cde764767408cef7681ba9c45ba544c7e0d69fddfc0b6"
     },
     "interleave.html": {
       "bytes": 37000,
@@ -457,16 +461,16 @@
       "sha256": "0911f905551dd87228defca49d0bc46ff33b0c73edf912614f914fbbc9c64eb2"
     },
     "retake.html": {
-      "bytes": 49246,
-      "sha256": "d37f9ffd877d65c32a1b053218b899bac78eb0acf1ee4cb8bd8b41ce09aefa16"
+      "bytes": 73669,
+      "sha256": "79e64a83e6cd382132ee979b77e812ac01a2626082bf792000f380fce820e69f"
     },
     "sampling.html": {
       "bytes": 23347,
       "sha256": "3226610f6968bb591295921b95c42b6d38ac38ec6541126c6191a9f799ee98ae"
     },
     "seigrasm.html": {
-      "bytes": 56258,
-      "sha256": "9a3d082d9250eb9c280b9198f92b17af0d8df43584a3296b0a8b6081300b8e63"
+      "bytes": 56884,
+      "sha256": "99b2e185c6c10829f77d522bce2cb734a86022b578b7552bf3d3b931f1af82c8"
     },
     "separation.html": {
       "bytes": 40155,
