@@ -1,8 +1,8 @@
 {
   "format": 1,
   "notebook": "Silicon foundations",
-  "snapshot_at": "2026-10-02T05:45:54+00:00",
-  "source_fingerprint": "7aa7d299050487b31ee8165cd15b525408939e31f8db4fe1dec32d0f8addb1a9",
+  "snapshot_at": "2026-10-02T06:37:39+00:00",
+  "source_fingerprint": "cc7429bafad0b72df35df609303dbcb0c1df4eec06e65427c47c16ad02297330",
   "files": {
     "adaptive.html": {
       "bytes": 44116,
@@ -37,8 +37,8 @@
       "sha256": "a64e601c91451e0a5042cb9af6da080aed6b25cdfa94cfd621cbbe32cf5d9556"
     },
     "configuration.html": {
-      "bytes": 26902,
-      "sha256": "7506441b79aca41a6167535a1e4d51fc913b527fb7f734dc7acb850c8b492358"
+      "bytes": 39322,
+      "sha256": "9cb0c53d265b75a90dbbecf4307db99a4dbda1fb8a951ba56e852c48d9c9ed47"
     },
     "consistency.html": {
       "bytes": 21825,
@@ -53,8 +53,8 @@
       "sha256": "c2762eceb94a5363329d455a908eccf1e8057810ae1a1af5bb182298bbdc4cbe"
     },
     "data.js": {
-      "bytes": 44295,
-      "sha256": "a22cfc6a514594bfe2c0242384a98b9e1e0002d5683ae441302f84d57d9ea576"
+      "bytes": 45154,
+      "sha256": "4d34c458442c612d0e03bea8cc4c38393e86b78ee069da6d02aadbf220f6740f"
     },
     "descent.html": {
       "bytes": 21759,
@@ -260,6 +260,10 @@
       "bytes": 82200,
       "sha256": "b109997d2397b6bf09d84ee8fcff4fce4aaa246b40b9f2d6ba83c9febf575560"
     },
+    "figures/b1211c3297763249-configuration-raw.svg": {
+      "bytes": 98355,
+      "sha256": "b1211c3297763249e3194be7007f48759c88dd5573e00e688be7224f00509d05"
+    },
     "figures/b19c7d58822f0c0f-configuration-raw.svg": {
       "bytes": 100807,
       "sha256": "b19c7d58822f0c0f500277d5422456a00bb1518e554dc522b6f009c07c8952ad"
@@ -385,8 +389,8 @@
       "sha256": "ba72d056f43f38ca70ceea768bfcb938090fb94dffe84df1bcdbfa5e641233ca"
     },
     "index.html": {
-      "bytes": 24698,
-      "sha256": "9886f675b9026fba8a0f24c63bb72b0769e883ffbd05149a7d6b3fbb84bbc4d4"
+      "bytes": 24668,
+      "sha256": "8f76492d1eb83f9f6e0fb8e10e9de0ce4a3296a5080bac6ad0d8feb7c2495424"
     },
     "interleave.html": {
       "bytes": 37000,
