@@ -1,8 +1,8 @@
 {
   "format": 1,
   "notebook": "Silicon foundations",
-  "snapshot_at": "2026-10-02T16:29:08+00:00",
-  "source_fingerprint": "32945de0672dbf1de3528b7772cc4658be7117a6174891f89d9395ea06a66a16",
+  "snapshot_at": "2026-10-02T18:13:09+00:00",
+  "source_fingerprint": "98e6c239b3759a3124d6f212eff4679eb99e5dd79dc005d3faeacd7e5d1da702",
   "files": {
     "adaptive.html": {
       "bytes": 44116,
@@ -53,8 +53,8 @@
       "sha256": "c2762eceb94a5363329d455a908eccf1e8057810ae1a1af5bb182298bbdc4cbe"
     },
     "data.js": {
-      "bytes": 49785,
-      "sha256": "9d9df60c2289a42cd40b3a06dd847a12ea78b1a1a618424f4539f227496eb549"
+      "bytes": 50797,
+      "sha256": "c3398302a53b9718a04f2a5a42a5ac665111fc3fd69be89b9e4b0ffaa6710f86"
     },
     "descent.html": {
       "bytes": 21759,
@@ -252,6 +252,10 @@
       "bytes": 40278,
       "sha256": "98265adae2cbf663591e939878ee0bec2cac6d6411ddbfb680c4bca26088e229"
     },
+    "figures/a0029ce45c4e1dbb-series-exceptions.svg": {
+      "bytes": 25938,
+      "sha256": "a0029ce45c4e1dbb8be6ee519e9ee19af4389b11dd9be323c064e44f57370aca"
+    },
     "figures/a8a95fe94070f858-mapping-reference.svg": {
       "bytes": 47949,
       "sha256": "a8a95fe94070f85808f1b20202c23f58cb063053bd9d0480395a5015295b2252"
@@ -409,8 +413,8 @@
       "sha256": "ba72d056f43f38ca70ceea768bfcb938090fb94dffe84df1bcdbfa5e641233ca"
     },
     "index.html": {
-      "bytes": 24685,
-      "sha256": "ce68926058c2bc56896500fa78416ce1673ea09e37ab6ba5f530b01d27c2b3cf"
+      "bytes": 24728,
+      "sha256": "f5d0a374423d80975436269e72b6e0018c8a5c285e039f4929fc9b5af688817c"
     },
     "interleave.html": {
       "bytes": 37000,
@@ -465,8 +469,8 @@
       "sha256": "0911f905551dd87228defca49d0bc46ff33b0c73edf912614f914fbbc9c64eb2"
     },
     "retake.html": {
-      "bytes": 94140,
-      "sha256": "6a204e266e5ed067f64a55d4467865af38ec419b9778fae273317b03b4ef4d32"
+      "bytes": 113705,
+      "sha256": "535d76e61d74c99efbb21c520bc90060d0042a0a868b30eeb382493f5ac01732"
     },
     "sampling.html": {
       "bytes": 23347,
