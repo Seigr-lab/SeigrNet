@@ -1,12 +1,16 @@
 {
   "format": 1,
   "notebook": "Silicon foundations",
-  "snapshot_at": "2026-10-03T08:58:02+00:00",
-  "source_fingerprint": "c551f0911e1b688b3af3504f324e6878beb8a7345f41869775c232c9ce933d00",
+  "snapshot_at": "2026-10-03T10:06:30+00:00",
+  "source_fingerprint": "b829ddd2e9379925c873a27102a0b62789d3e3b414065921a3b8dfb34e813e2b",
   "files": {
     "adaptive.html": {
       "bytes": 44116,
       "sha256": "733de7c61aeb58f27004609757fb34851a720f36f3a656bd9927d40f32ab65c6"
+    },
+    "adcread.html": {
+      "bytes": 13276,
+      "sha256": "eada4c131a8fe331a416b359b138ec2806687e3ad9c592f58bb5d26bfdddc800"
     },
     "app.js": {
       "bytes": 3586,
@@ -61,8 +65,8 @@
       "sha256": "c2762eceb94a5363329d455a908eccf1e8057810ae1a1af5bb182298bbdc4cbe"
     },
     "data.js": {
-      "bytes": 54947,
-      "sha256": "0c0ad504ce904be3752e107e1ea5e51f8e135e97d8fbf0d72dd3be72f8277a61"
+      "bytes": 55715,
+      "sha256": "3cd890d6431962f65c6bc4e87efd0d693d1e1ab008560bcebc9c12315f6591c7"
     },
     "descent.html": {
       "bytes": 21759,
@@ -81,8 +85,8 @@
       "sha256": "6ec7ba9197e81bad7959c156d34a7e58a9640f1849c0ba98e998b0d3f6a1095f"
     },
     "experiments.html": {
-      "bytes": 16884,
-      "sha256": "b39ebe5082c3099e38cf62cfdf4bc7e2a3ff22d6747dd1e11bd057625a607e2a"
+      "bytes": 17083,
+      "sha256": "2bd12d536e35fd97b55bc06a0349b289b583fff108c59d506566cac8f82c838b"
     },
     "figures/000e3f808887aecc-reference-gaps.svg": {
       "bytes": 45131,
@@ -425,8 +429,8 @@
       "sha256": "ba72d056f43f38ca70ceea768bfcb938090fb94dffe84df1bcdbfa5e641233ca"
     },
     "index.html": {
-      "bytes": 24714,
-      "sha256": "a47220a9894bf1ce960682a2db44059304999f521698068dac7f67fd18d0cee4"
+      "bytes": 24621,
+      "sha256": "cd91a47e674cd7e46c620a9cc1e366f0a45ed86e343171e1b26b77668134a879"
     },
     "interleave.html": {
       "bytes": 37000,
@@ -505,8 +509,8 @@
       "sha256": "60ed9d956682ac53f1658c96bb00c7c013a4df8482cf608869227bc150b09106"
     },
     "silicon.html": {
-      "bytes": 34424,
-      "sha256": "2aea8cc27feee645b1758c039b79154507ddf466817d5386646a16b505ff0a62"
+      "bytes": 34763,
+      "sha256": "b44970f03e9c65d34f195c19b5e707cf7de1e997bc40f0abb5626039ccbda89f"
     },
     "stability.html": {
       "bytes": 20998,
