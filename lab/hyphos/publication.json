@@ -1,8 +1,8 @@
 {
   "format": 1,
   "notebook": "Silicon foundations",
-  "snapshot_at": "2026-10-02T19:35:55+00:00",
-  "source_fingerprint": "1d798d96aedebaa04879db8648dac94de39186bf3c6ad61900be13b67cc3a68e",
+  "snapshot_at": "2026-10-03T06:13:19+00:00",
+  "source_fingerprint": "d385fe614c6596666deaaa9724d377857a5fdb546015cbbaeb9cde07e6cda9e0",
   "files": {
     "adaptive.html": {
       "bytes": 44116,
@@ -53,8 +53,8 @@
       "sha256": "c2762eceb94a5363329d455a908eccf1e8057810ae1a1af5bb182298bbdc4cbe"
     },
     "data.js": {
-      "bytes": 51720,
-      "sha256": "2bd883cd4c44effe329bf4df568b3f241e1d3958490949dbf12fe0bbc4498a6a"
+      "bytes": 52448,
+      "sha256": "ce2657a49c0bc3e49a368357187dae88a0ff9153c7282cbc5e66e72a43980818"
     },
     "descent.html": {
       "bytes": 21759,
@@ -476,6 +476,10 @@
       "bytes": 113705,
       "sha256": "535d76e61d74c99efbb21c520bc90060d0042a0a868b30eeb382493f5ac01732"
     },
+    "rp1.html": {
+      "bytes": 13543,
+      "sha256": "e67b749ab5a32c042c6c7c4500f87ed6da113667a71889de6c5779ce5d1c367e"
+    },
     "sampling.html": {
       "bytes": 23347,
       "sha256": "3226610f6968bb591295921b95c42b6d38ac38ec6541126c6191a9f799ee98ae"
@@ -489,8 +493,8 @@
       "sha256": "60ed9d956682ac53f1658c96bb00c7c013a4df8482cf608869227bc150b09106"
     },
     "silicon.html": {
-      "bytes": 14258,
-      "sha256": "58721b9a3d31f7a33616e8d62664ccf9c58d7f841f13810dd28ad21d35471b88"
+      "bytes": 33666,
+      "sha256": "203f6340e216727c7afd30394acfa250c0b739e9389be3b22d52f7fc3650f175"
     },
     "stability.html": {
       "bytes": 20998,
