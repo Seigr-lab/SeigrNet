@@ -1,8 +1,8 @@
 {
   "format": 1,
   "notebook": "Silicon foundations",
-  "snapshot_at": "2026-10-03T14:51:05+00:00",
-  "source_fingerprint": "9382353cb86d5e96805a370a486d144b725468699b9c2bfa76fb963cf0bd76a3",
+  "snapshot_at": "2026-10-03T15:56:44+00:00",
+  "source_fingerprint": "03b9c660fcef89ce30e0ad5950457cf9b7317612e54914a90a7547cb67192f09",
   "files": {
     "adaptive.html": {
       "bytes": 44116,
@@ -17,8 +17,8 @@
       "sha256": "3a72ed1dcb9eb5046ed8563dd878a9a4d686b69891c4f7d0031422904428ba59"
     },
     "autonomy.html": {
-      "bytes": 18448,
-      "sha256": "dc1839d709345ed87e10c364df2b0ff299ab9c6916e7e2b538b7460c43ae16e9"
+      "bytes": 18522,
+      "sha256": "f1ad2a7c765d5652537635511e4539334909ce3fa64781dfae27d5568532a0b4"
     },
     "balance.html": {
       "bytes": 24710,
@@ -77,8 +77,8 @@
       "sha256": "c2762eceb94a5363329d455a908eccf1e8057810ae1a1af5bb182298bbdc4cbe"
     },
     "data.js": {
-      "bytes": 58002,
-      "sha256": "22ed164e1d9d96dab8125a9ca4e6210dd6b4766fccae9cdebe2751ac1dc41be4"
+      "bytes": 58881,
+      "sha256": "5e8b13b9333dbd77bfa9f28b1f41175a9a0aca2790a80e555a75c36bc393b425"
     },
     "descent.html": {
       "bytes": 21759,
@@ -441,8 +441,8 @@
       "sha256": "ba72d056f43f38ca70ceea768bfcb938090fb94dffe84df1bcdbfa5e641233ca"
     },
     "index.html": {
-      "bytes": 24617,
-      "sha256": "441b9f911d8e138dac8a17515f8ce0999f5a07a3a24f769a4d5e7bda6725abe7"
+      "bytes": 24621,
+      "sha256": "0ecdaea40231c9d4ff98150a8189f8cbd6082b5f2070fcbba3a00ceaffb75b94"
     },
     "interleave.html": {
       "bytes": 37000,
@@ -521,8 +521,8 @@
       "sha256": "60ed9d956682ac53f1658c96bb00c7c013a4df8482cf608869227bc150b09106"
     },
     "silicon.html": {
-      "bytes": 35964,
-      "sha256": "d3be4f27cf57b79b2d2cd5e34eed371aa9648e6fac6f32806e07a9f80ea7b65d"
+      "bytes": 36205,
+      "sha256": "218009cc84a5e6174077e695194aa221f4cdae92108da53c29d80701d9ee8a94"
     },
     "stability.html": {
       "bytes": 20998,
@@ -539,6 +539,10 @@
     "transitions.html": {
       "bytes": 48122,
       "sha256": "0ad2b46f82c14be0e1432cae383cf5227a3274c14aff68d16999e39941f733fb"
+    },
+    "window.html": {
+      "bytes": 18411,
+      "sha256": "68492062a1626f06ef222ebee4cd46310b9b22e251d769c6606ea607c1dddced"
     }
   }
 }
