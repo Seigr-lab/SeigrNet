@@ -1,8 +1,8 @@
 {
   "format": 1,
   "notebook": "Silicon foundations",
-  "snapshot_at": "2026-10-04T09:20:43+00:00",
-  "source_fingerprint": "a6c717f12f22b014ef8a4ef6ce52efef65fd1f0b2ff8221538108095c019187d",
+  "snapshot_at": "2026-10-04T10:08:02+00:00",
+  "source_fingerprint": "328a23dbf6de0f38f27a048737f1ca79b7c3683bd7b6e12554e4eb6f83686710",
   "files": {
     "adaptive.html": {
       "bytes": 44116,
@@ -89,8 +89,8 @@
       "sha256": "c2762eceb94a5363329d455a908eccf1e8057810ae1a1af5bb182298bbdc4cbe"
     },
     "data.js": {
-      "bytes": 67326,
-      "sha256": "2cbc3379dd125c00dc371b070df37ef67a6438e51faaf35a1356da28db14de8c"
+      "bytes": 68271,
+      "sha256": "a076434a0fff7b510b86affe15651f8c28144ae42ea72ffb8fe08ebcc884e680"
     },
     "descent.html": {
       "bytes": 21759,
@@ -151,6 +151,10 @@
     "figures/0a39ecf2d06fbe26-boundary-margins.svg": {
       "bytes": 58006,
       "sha256": "0a39ecf2d06fbe26a12955d0402429ea8e10db3fd39d6987a46fac1c416d8d98"
+    },
+    "figures/0bbf5bf856e072e4-source-response.svg": {
+      "bytes": 83427,
+      "sha256": "0bbf5bf856e072e4b30e92f31570ed305de83449e86e2eb0abf1a342baa6efa7"
     },
     "figures/117b4a973feff93e-median-bands.svg": {
       "bytes": 337232,
@@ -497,8 +501,8 @@
       "sha256": "ba72d056f43f38ca70ceea768bfcb938090fb94dffe84df1bcdbfa5e641233ca"
     },
     "index.html": {
-      "bytes": 24766,
-      "sha256": "d91792e78a052eced860bcafc206b260207919c72ffd0fe0a904d827ac86d3ee"
+      "bytes": 24727,
+      "sha256": "14135a4c2e30e30fc82f52c51ed66f3c410ce19fa356e0999ffca3e0b473efc0"
     },
     "interleave.html": {
       "bytes": 37000,
@@ -585,8 +589,8 @@
       "sha256": "3226610f6968bb591295921b95c42b6d38ac38ec6541126c6191a9f799ee98ae"
     },
     "seigrasm.html": {
-      "bytes": 70669,
-      "sha256": "7175b1d466df753cdba48e0efe42b6edd56b56dac77d53871f33decfa00ec227"
+      "bytes": 71445,
+      "sha256": "811ce15c343e3c13ddcef666729592a5e4d14b43c3b2e532dd66084d62fafcfc"
     },
     "separation.html": {
       "bytes": 40155,
@@ -595,6 +599,10 @@
     "silicon.html": {
       "bytes": 38809,
       "sha256": "923d20d26e74d46680b0ed94eeb4ce1157bc8195faefd89c0b5e1d1df4207f0d"
+    },
+    "source.html": {
+      "bytes": 20012,
+      "sha256": "210f4f66a158f2b3c6c080883bbfccaad9dc1008646b7a4edb8c9c78141256d6"
     },
     "stability.html": {
       "bytes": 20998,
