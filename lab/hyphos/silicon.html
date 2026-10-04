@@ -40,7 +40,8 @@
         </tbody>
       </table></div>
       <p>The resource descriptions follow the <a href="https://www.raspberrypi.com/documentation/computers/io-controllers.html">RP1 overview</a>, <a href="https://datasheets.raspberrypi.com/rp1/rp1-peripherals.pdf">peripheral specification</a> and <a href="https://www.raspberrypi.com/news/piolib-a-userspace-library-for-pio-control/">PIO access description</a>. They establish candidate capabilities, not the outcome of a Hyphos experiment. Six electrical states remain a requirement to realize and test; changing their representation is not evidence of changing the physical transport.</p>
-    </section>
+    <p>The <a href="anchored.html#results">write-relative acquisition return</a> recovered the declared counts in all 32 continuous conditions, including sixteen quiet windows. All sixteen observed first arrivals aligned with the second interval from the divider write. Timing records locate a remaining command-preparation interval after the deadline wait; <a href="anchored.html#interpretation">moving that preparation before the wait</a> is the next proposed precision test.</p>
+</section>
     <section id="rp1-route" class="panel" aria-labelledby="rp1-route-title">
       <h2 id="rp1-route-title">Measured access and candidate routes</h2>
       <p><strong>Archived observation.</strong> Acquisition <code>BEABB6712394</code> contains a completed, checksum-valid record pair. The raw recording was decoded again for this investigation. It identifies RP1 as <code>0x20001927</code>, platform <code>0x2</code>, with peripheral BAR1 at bus address <code>0x80000000</code>. The retained outbound window maps that address to CPU address <code>0x1c00000000</code>. The window extends to <code>0x1c3fffffff</code>; the recorded link checks agree and no exception is recorded.</p>
