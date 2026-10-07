@@ -1,8 +1,8 @@
 {
   "format": 1,
   "notebook": "Silicon foundations",
-  "snapshot_at": "2026-10-07T10:54:43+00:00",
-  "source_fingerprint": "5ba3a99a158cc6f225fe3f121aacd007ae8898027836fc324399ebcfba45aa08",
+  "snapshot_at": "2026-10-07T13:00:45+00:00",
+  "source_fingerprint": "1cb3af6653ca6f9a04f8ead8b8d9a1fa0a0d3100fa68a18ad2c274d9f0a5301e",
   "files": {
     "acquire.html": {
       "bytes": 17606,
@@ -101,8 +101,8 @@
       "sha256": "c2762eceb94a5363329d455a908eccf1e8057810ae1a1af5bb182298bbdc4cbe"
     },
     "data.js": {
-      "bytes": 79167,
-      "sha256": "ae7247347c7bab84530237e1189f736cda8b12517790ff40c9c17d58b56922b2"
+      "bytes": 80259,
+      "sha256": "249c335cf477b75e050cf1aa035a45d74cb61cb5919c58b817d88fe7369b3a5c"
     },
     "descent.html": {
       "bytes": 21759,
@@ -129,8 +129,8 @@
       "sha256": "c045abf879770861a02b9375470815bf23af380ffc9d6436e337033cc8810a97"
     },
     "experiments.html": {
-      "bytes": 18942,
-      "sha256": "b89aa3d92bedfb84748ccd87d14ce55e9a1cf2ccc6877957960719602e9e8a72"
+      "bytes": 18884,
+      "sha256": "bb90d847d77fa40f91166ce47afaae17d5abc2d0b3a0475d97b63756d6dd50e9"
     },
     "figures/000e3f808887aecc-reference-gaps.svg": {
       "bytes": 45131,
@@ -533,8 +533,8 @@
       "sha256": "46df3b966f50570d5e287c556aa9704040d043866e106ab11a19cecb77c23567"
     },
     "index.html": {
-      "bytes": 24967,
-      "sha256": "cc9d2a7d8ad690f92583ad1eba4f46ec4d265625474011caae48ff350b8dc5ef"
+      "bytes": 24922,
+      "sha256": "4e24cbb0a6dd11b09d77de2b1e03643e30735adedec3aaf6cb12e7c934d8345e"
     },
     "interleave.html": {
       "bytes": 37000,
@@ -608,6 +608,10 @@
       "bytes": 41498,
       "sha256": "ad8f1809e8b6b32e722db9edd859cd04af8d4e9c2eac84d0c2c34c0b7b1843d7"
     },
+    "resources.html": {
+      "bytes": 22429,
+      "sha256": "c1996545b690305f648e78e39ddfeb2e8a3da7fa943eb084e0b5db4cdd2fba37"
+    },
     "response.html": {
       "bytes": 28223,
       "sha256": "0911f905551dd87228defca49d0bc46ff33b0c73edf912614f914fbbc9c64eb2"
@@ -645,8 +649,8 @@
       "sha256": "3226610f6968bb591295921b95c42b6d38ac38ec6541126c6191a9f799ee98ae"
     },
     "seigrasm.html": {
-      "bytes": 80111,
-      "sha256": "c720487f254272501acd0c00d79e8026bc98b8ccfbe244cc338664946a1e4961"
+      "bytes": 80836,
+      "sha256": "5f61aa293959cf9f2b8297fa841bb11d67d481615cc4d8d6d46a28d9641bec93"
     },
     "separation.html": {
       "bytes": 40155,
